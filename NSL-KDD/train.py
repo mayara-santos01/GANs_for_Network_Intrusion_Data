@@ -14,6 +14,14 @@ def main(arg):
     train,test, label_mapping = preprocessing.get_data(encoding="Label")
     data_cols = list(train.columns[ train.columns != 'label' ])
 
+    #choosing the especific class for test and training
+    #{"dos": 0, "normal": 1}
+    aimed_class = "dos"  
+    aimed_id = label_mapping[aimed_class]
+
+    train = train[train["label"] == aimed_id].copy()
+    test = test[test["label"] == aimed_id].copy()
+    
     #Remove contant values with a threshold
     to_drop = preprocessing.get_contant_featues(train,data_cols,threshold=0.995)
 
