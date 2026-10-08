@@ -16,11 +16,11 @@ def main(arg):
 
     #choosing the especific class for test and training
     #{"dos": 0, "normal": 1}
-    aimed_class = "dos"  
-    aimed_id = label_mapping[aimed_class]
+    #aimed_class = "dos"  
+    #aimed_id = label_mapping[aimed_class]
 
-    train = train[train["label"] == aimed_id].copy()
-    test = test[test["label"] == aimed_id].copy()
+    #train = train[train["label"] == aimed_id].copy()
+    #test = test[test["label"] == aimed_id].copy()
     
     #Remove contant values with a threshold
     to_drop = preprocessing.get_contant_featues(train,data_cols,threshold=0.995)
@@ -62,10 +62,10 @@ def main(arg):
     x_train, y_train = None, None
 
     #Novas atribuicoes
-    att_ind = np.where(train.label != label_mapping["normal"])[0]
-    y = train.label.values
-    x = train[data_cols].values[att_ind]
-    y = y[att_ind]
+    #att_ind = np.where(train.label != label_mapping["normal"])[0]
+    #y = train.label.values
+    #x = train[data_cols].values[att_ind]
+    #y = y[att_ind]
 
     #Define, Train & Save GAN
     print("GAN Training Starting ....")
