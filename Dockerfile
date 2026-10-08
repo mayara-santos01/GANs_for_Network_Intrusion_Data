@@ -56,7 +56,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Clone the project repository
 RUN git clone --depth 1 \
-    https://github.com/EduSanSou/GANs_for_Network_Intrusion_Data.git
+    https://github.com/mayara-santos01/GANs_for_Network_Intrusion_Data.git
 
 # Python 3.7 is not compatible with current pip releases.
 # Use versions compatible with Python 3.7.
