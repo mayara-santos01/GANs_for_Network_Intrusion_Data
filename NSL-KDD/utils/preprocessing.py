@@ -60,8 +60,11 @@ def preprocess(x_train, x_test, data_cols, preprocessor = "StandardScaler",rejec
         # to_drop = profile.get_rejected_variables()
         to_drop = ['dst_host_srv_serror_rate','num_root','rerror_rate',
                     'serror_rate','srv_rerror_rate','srv_serror_rate']
-        x_train.drop(to_drop,axis=1,inplace=True)
-        x_test.drop(to_drop,axis=1,inplace=True)
+        #x_train.drop(to_drop,axis=1,inplace=True)
+        #x_test.drop(to_drop,axis=1,inplace=True)
+        #Fixing double colum removal error
+        x_train.drop(to_drop, axis=1, inplace=True, errors="ignore")
+        x_test.drop(to_drop, axis=1, inplace=True, errors="ignore")
         data_cols = list(x_train.columns[ x_train.columns != 'label' ])
 
     if preprocessor == "MinMax":
