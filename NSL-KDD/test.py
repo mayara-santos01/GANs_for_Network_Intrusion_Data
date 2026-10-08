@@ -18,6 +18,14 @@ def main():
     train,test, label_mapping = preprocessing.get_data(encoding="Label")
     data_cols = list(train.columns[ train.columns != 'label' ])
 
+    #choosing the especific class for test and training
+    #{"dos": 0, "normal": 1}
+    aimed_class = "dos"  
+    aimed_id = label_mapping[aimed_class]
+
+    train = train[train["label"] == aimed_id].copy()
+    test = test[test["label"] == aimed_id].copy()
+    
     #Remove contant values with a threshold
     to_drop = preprocessing.get_contant_featues(train,data_cols,threshold=0.995)
 
@@ -31,6 +39,7 @@ def main():
     x_train , x_test = preprocessing.preprocess(train,test,data_cols,"Robust",True)
     data_cols = list(x_train.columns[x_train.columns != 'label' ])
 
+    #Data used for training and test is deleted after the process
     train, test = None, None
     y_train = x_train.label.values
     y_test = x_test.label.values
