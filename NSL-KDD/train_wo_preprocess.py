@@ -14,14 +14,7 @@ def main(arg):
     train,test, label_mapping = preprocessing.get_data(encoding="Label")
     data_cols = list(train.columns[ train.columns != 'label' ])
 
-    #choosing the especific class for test and training
-    #{"dos": 0, "normal": 1}
-    aimed_class = "dos"  
-    aimed_id = label_mapping[aimed_class]
-
-    train = train[train["label"] == aimed_id].copy()
-    test = test[test["label"] == aimed_id].copy()
-    
+    '''Commenting preprocessing lines
     #Remove contant values with a threshold
     to_drop = preprocessing.get_contant_featues(train,data_cols,threshold=0.995)
 
@@ -36,6 +29,7 @@ def main(arg):
     data_cols = list(x_train.columns[x_train.columns != 'label' ])
 
     train, test = None, None
+    '''
     y_train = x_train.label.values
     y_test = x_test.label.values
 
@@ -75,7 +69,7 @@ def main(arg):
     print("GAN Training & Save [SUCCESSFUL]")
     
     #Plot GAN training logs
-    gan_path = f"./logs/CGAN_DOS_{model.gan_name}.pickle"
+    gan_path = f"./logs/CGAN_{model.gan_name}.pickle"
     utils.plot_training_summary(gan_path,'./imgs')
 
 if __name__ == '__main__':
