@@ -1,0 +1,11 @@
+classe,quantidade,porcentagem_do_total
+Fuzzers,20184,18.33
+Exploits,20000,18.17
+Generic,20000,18.17
+Reconnaissance,15491,14.07
+DoS,15264,13.87
+Analysis,8000,7.27
+Backdoor,7746,7.04
+Shellcode,3133,2.85
+Worms,268,0.24
+NA,1,0.0

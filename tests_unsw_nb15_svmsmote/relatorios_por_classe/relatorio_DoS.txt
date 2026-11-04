@@ -1,0 +1,1346 @@
+RELATÓRIO DE ANÁLISE DA QUALIDADE DOS DADOS
+Data: 04/11/2026 09:07:27
+Arquivo analisado: DoS.csv
+Quantidade de registros: 15264
+Quantidade de features: 42
+Classe: DoS
+Class ID: 2
+
+===========================================================================
+1. ANÁLISE DE VALORES AUSENTES
+===========================================================================
+
+Total de células: 671616
+Valores ausentes ou vazios: 470
+Percentual: 0.07%
+
+Variáveis com valores ausentes:
+
+proto: 301 (1.97%)
+service: 153 (1.00%)
+state: 16 (0.10%)
+
+===========================================================================
+2. ANÁLISE DE REGISTROS DUPLICADOS
+===========================================================================
+
+Registros duplicados: 10294
+Percentual: 67.44%
+
+Foram encontrados registros duplicados. Recomenda-se investigar sua ocorrência.
+
+===========================================================================
+3. ANÁLISE ESTATÍSTICA DAS VARIÁVEIS NUMÉRICAS
+===========================================================================
+
+
+---------------------------------------------------------------------------
+VARIÁVEL: dur
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 2816
+Média: 2.607236
+Mediana: 0.000009
+Desvio padrão: 10.614226
+Mínimo: -10.197790
+Máximo: 73.110550
+Q1: 0.000005
+Q3: 0.087682
+IQR: 0.087677
+Coeficiente de variação: 4.071065
+Assimetria: 4.646328
+Curtose: 20.686473
+Outliers: 3601 (23.59%)
+Valores zero: 10 (0.07%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: spkts
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 364
+Média: 21.422423
+Mediana: 2.000000
+Desvio padrão: 218.384357
+Mínimo: -137.331299
+Máximo: 8070.000000
+Q1: 2.000000
+Q3: 2.000000
+IQR: 0.000000
+Coeficiente de variação: 10.194195
+Assimetria: 26.549182
+Curtose: 804.859575
+Outliers: 3917 (25.66%)
+Valores zero: 0 (0.00%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dpkts
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 377
+Média: 17.336763
+Mediana: 0.000000
+Desvio padrão: 258.690897
+Mínimo: -59.941457
+Máximo: 10974.000000
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 14.921522
+Assimetria: 27.389637
+Curtose: 881.996627
+Outliers: 2833 (18.56%)
+Valores zero: 12431 (81.44%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: sbytes
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 1544
+Média: 15817.065059
+Mediana: 200.000000
+Desvio padrão: 278197.377260
+Mínimo: -53097.290000
+Máximo: 10678010.000000
+Q1: 200.000000
+Q3: 400.000000
+IQR: 200.000000
+Coeficiente de variação: 17.588432
+Assimetria: 29.479256
+Curtose: 937.001847
+Outliers: 3354 (21.97%)
+Valores zero: 0 (0.00%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dbytes
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 1350
+Média: 17186.753907
+Mediana: 0.000000
+Desvio padrão: 342560.875925
+Mínimo: -2577.483000
+Máximo: 14655550.000000
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 19.931680
+Assimetria: 28.163629
+Curtose: 913.519722
+Outliers: 2833 (18.56%)
+Valores zero: 12431 (81.44%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: rate
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 2808
+Média: 155224.692841
+Mediana: 111111.100000
+Desvio padrão: 185653.551155
+Mínimo: -24.873750
+Máximo: 1000000.000000
+Q1: 105.536525
+Q3: 200000.000000
+IQR: 199894.463475
+Coeficiente de variação: 1.196031
+Assimetria: 2.891889
+Curtose: 10.405883
+Outliers: 690 (4.52%)
+Valores zero: 119 (0.78%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Foram identificados possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: sttl
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 127
+Média: 235.138397
+Mediana: 254.000000
+Desvio padrão: 57.609674
+Mínimo: -22.980225
+Máximo: 255.000000
+Q1: 254.000000
+Q3: 254.000000
+IQR: 0.000000
+Coeficiente de variação: 0.245003
+Assimetria: -2.781310
+Curtose: 5.899204
+Outliers: 1543 (10.11%)
+Valores zero: 92 (0.60%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria negativa.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Dispersão relativa moderada.
+Proporção elevada de possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dttl
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 10
+Média: 42.963083
+Mediana: 0.000000
+Desvio padrão: 93.586972
+Mínimo: -23.836479
+Máximo: 336.980225
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 2.178311
+Assimetria: 1.771322
+Curtose: 1.172782
+Outliers: 2833 (18.56%)
+Valores zero: 12431 (81.44%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: sload
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 3005
+Média: 128808237.607494
+Mediana: 88888890.000000
+Desvio padrão: 175843034.325079
+Mínimo: -2085.661000
+Máximo: 3698666000.000000
+Q1: 295450.475000
+Q3: 160000000.000000
+IQR: 159704549.525000
+Coeficiente de variação: 1.365154
+Assimetria: 5.457583
+Curtose: 59.064653
+Outliers: 771 (5.05%)
+Valores zero: 119 (0.78%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Foram identificados possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dload
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 2607
+Média: 13270.032623
+Mediana: 0.000000
+Desvio padrão: 102982.799797
+Mínimo: -10769.490000
+Máximo: 2097525.000000
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 7.760554
+Assimetria: 11.979399
+Curtose: 164.346330
+Outliers: 2833 (18.56%)
+Valores zero: 12431 (81.44%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: sloss
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 280
+Média: 6.758903
+Mediana: 0.000000
+Desvio padrão: 107.102542
+Mínimo: -71.084370
+Máximo: 4033.000000
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 15.846144
+Assimetria: 28.008990
+Curtose: 870.287921
+Outliers: 2500 (16.38%)
+Valores zero: 12764 (83.62%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dloss
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 255
+Média: 6.673485
+Mediana: 0.000000
+Desvio padrão: 127.794491
+Mínimo: -0.416441
+Máximo: 5484.000000
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 19.149587
+Assimetria: 28.339773
+Curtose: 925.929145
+Outliers: 2452 (16.06%)
+Valores zero: 12812 (83.94%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: sinpkt
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 2776
+Média: 86.818714
+Mediana: 0.009000
+Desvio padrão: 418.847322
+Mínimo: -173.584819
+Máximo: 8527.316000
+Q1: 0.005000
+Q3: 0.034000
+IQR: 0.029000
+Coeficiente de variação: 4.824390
+Assimetria: 11.092562
+Curtose: 176.171848
+Outliers: 3809 (24.95%)
+Valores zero: 119 (0.78%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dinpkt
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 2569
+Média: 16.717631
+Mediana: 0.000000
+Desvio padrão: 58.576556
+Mínimo: -11.148833
+Máximo: 2122.846250
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 3.503879
+Assimetria: 9.281607
+Curtose: 177.625233
+Outliers: 2833 (18.56%)
+Valores zero: 12431 (81.44%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: sjit
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 2718
+Média: 816.829708
+Mediana: 0.000000
+Desvio padrão: 2881.412554
+Mínimo: -180.803500
+Máximo: 117271.500000
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 3.527556
+Assimetria: 15.100254
+Curtose: 435.566482
+Outliers: 3809 (24.95%)
+Valores zero: 11455 (75.05%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: djit
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 2532
+Média: 98.686933
+Mediana: 0.000000
+Desvio padrão: 777.351642
+Mínimo: -15.766677
+Máximo: 34727.029600
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 7.876946
+Assimetria: 22.170709
+Curtose: 704.016435
+Outliers: 2628 (17.22%)
+Valores zero: 12636 (82.78%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: swin
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 2
+Média: 41.998821
+Mediana: 0.000000
+Desvio padrão: 94.585329
+Mínimo: 0.000000
+Máximo: 255.000000
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 2.252095
+Assimetria: 1.808153
+Curtose: 1.269584
+Outliers: 2514 (16.47%)
+Valores zero: 12750 (83.53%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: stcpb
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 2469
+Média: 354313168.559945
+Mediana: 0.000000
+Desvio padrão: 945200565.210032
+Mínimo: 0.000000
+Máximo: 4293672000.000000
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 2.667698
+Assimetria: 2.706604
+Curtose: 6.137706
+Outliers: 2514 (16.47%)
+Valores zero: 12750 (83.53%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dtcpb
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 2414
+Média: 353544839.058897
+Mediana: 0.000000
+Desvio padrão: 943461431.753923
+Mínimo: 0.000000
+Máximo: 4294535000.000000
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 2.668576
+Assimetria: 2.723412
+Curtose: 6.260968
+Outliers: 2514 (16.47%)
+Valores zero: 12750 (83.53%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dwin
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 2
+Média: 41.998821
+Mediana: 0.000000
+Desvio padrão: 94.585329
+Mínimo: 0.000000
+Máximo: 255.000000
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 2.252095
+Assimetria: 1.808153
+Curtose: 1.269584
+Outliers: 2514 (16.47%)
+Valores zero: 12750 (83.53%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: tcprtt
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 2378
+Média: 0.019546
+Mediana: 0.000000
+Desvio padrão: 0.050095
+Mínimo: 0.000000
+Máximo: 0.434244
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 2.562981
+Assimetria: 2.818499
+Curtose: 8.049747
+Outliers: 2514 (16.47%)
+Valores zero: 12750 (83.53%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: synack
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 2364
+Média: 0.009347
+Mediana: 0.000000
+Desvio padrão: 0.025992
+Mínimo: 0.000000
+Máximo: 0.241351
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 2.780688
+Assimetria: 3.222653
+Curtose: 11.051592
+Outliers: 2514 (16.47%)
+Valores zero: 12750 (83.53%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ackdat
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 2357
+Média: 0.010198
+Mediana: 0.000000
+Desvio padrão: 0.025844
+Mínimo: 0.000000
+Máximo: 0.301518
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 2.534108
+Assimetria: 2.875680
+Curtose: 9.587319
+Outliers: 2514 (16.47%)
+Valores zero: 12750 (83.53%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: smean
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 816
+Média: 133.736200
+Mediana: 100.000000
+Desvio padrão: 159.190005
+Mínimo: -93.018825
+Máximo: 1698.340690
+Q1: 100.000000
+Q3: 100.000000
+IQR: 0.000000
+Coeficiente de variação: 1.190328
+Assimetria: 5.210671
+Curtose: 29.939439
+Outliers: 4950 (32.43%)
+Valores zero: 0 (0.00%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dmean
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 732
+Média: 40.043103
+Mediana: 0.000000
+Desvio padrão: 154.038705
+Mínimo: -303.915112
+Máximo: 1645.231734
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 3.846822
+Assimetria: 6.134488
+Curtose: 41.783181
+Outliers: 2833 (18.56%)
+Valores zero: 12431 (81.44%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: trans_depth
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 114
+Média: 0.082880
+Mediana: 0.000000
+Desvio padrão: 0.278147
+Mínimo: 0.000000
+Máximo: 5.000000
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 3.356007
+Assimetria: 3.474995
+Curtose: 16.246093
+Outliers: 1308 (8.57%)
+Valores zero: 13956 (91.43%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Foram identificados possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: response_body_len
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 537
+Média: 3372.373719
+Mediana: 0.000000
+Desvio padrão: 115677.492732
+Mínimo: 0.000000
+Máximo: 5242880.000000
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 34.301505
+Assimetria: 43.428322
+Curtose: 1937.928516
+Outliers: 974 (6.38%)
+Valores zero: 14290 (93.62%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Foram identificados possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_srv_src
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 783
+Média: 4.484744
+Mediana: 4.000000
+Desvio padrão: 3.111451
+Mínimo: -4.738122
+Máximo: 36.000000
+Q1: 2.000000
+Q3: 6.000000
+IQR: 4.000000
+Coeficiente de variação: 0.693786
+Assimetria: 1.043223
+Curtose: 1.863448
+Outliers: 254 (1.66%)
+Valores zero: 0 (0.00%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Foram identificados possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_state_ttl
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 26
+Média: 1.872269
+Mediana: 2.000000
+Desvio padrão: 0.750190
+Mínimo: -0.371937
+Máximo: 6.000000
+Q1: 2.000000
+Q3: 2.000000
+IQR: 0.000000
+Coeficiente de variação: 0.400685
+Assimetria: 2.658243
+Curtose: 16.388082
+Outliers: 3156 (20.68%)
+Valores zero: 381 (2.50%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Proporção elevada de possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_dst_ltm
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 711
+Média: 2.473534
+Mediana: 2.000000
+Desvio padrão: 2.119870
+Mínimo: -4.381709
+Máximo: 45.000000
+Q1: 1.000000
+Q3: 3.000000
+IQR: 2.000000
+Coeficiente de variação: 0.857020
+Assimetria: 4.674476
+Curtose: 44.606969
+Outliers: 476 (3.12%)
+Valores zero: 0 (0.00%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Foram identificados possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_src_dport_ltm
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 554
+Média: 2.128627
+Mediana: 2.000000
+Desvio padrão: 1.506603
+Mínimo: 0.114789
+Máximo: 33.000000
+Q1: 1.000000
+Q3: 3.000000
+IQR: 2.000000
+Coeficiente de variação: 0.707782
+Assimetria: 2.952658
+Curtose: 20.810098
+Outliers: 376 (2.46%)
+Valores zero: 0 (0.00%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Foram identificados possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_dst_sport_ltm
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 535
+Média: 2.105395
+Mediana: 2.000000
+Desvio padrão: 1.462163
+Mínimo: 0.114789
+Máximo: 10.888188
+Q1: 1.000000
+Q3: 3.000000
+IQR: 2.000000
+Coeficiente de variação: 0.694484
+Assimetria: 2.338821
+Curtose: 7.703841
+Outliers: 369 (2.42%)
+Valores zero: 0 (0.00%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Foram identificados possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_dst_src_ltm
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 740
+Média: 5.067054
+Mediana: 4.000000
+Desvio padrão: 4.146312
+Mínimo: 0.065117
+Máximo: 45.000000
+Q1: 2.000000
+Q3: 6.000000
+IQR: 4.000000
+Coeficiente de variação: 0.818288
+Assimetria: 1.608271
+Curtose: 4.635722
+Outliers: 1254 (8.22%)
+Valores zero: 0 (0.00%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Foram identificados possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_ftp_cmd
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 3
+Média: 0.001163
+Mediana: 0.000000
+Desvio padrão: 0.033911
+Mínimo: 0.000000
+Máximo: 1.000000
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 29.150782
+Assimetria: 29.190576
+Curtose: 851.828783
+Outliers: 18 (0.12%)
+Valores zero: 15246 (99.88%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Foram identificados possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_flw_http_mthd
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 116
+Média: 0.094097
+Mediana: 0.000000
+Desvio padrão: 0.366537
+Mínimo: 0.000000
+Máximo: 6.000000
+Q1: 0.000000
+Q3: 0.000000
+IQR: 0.000000
+Coeficiente de variação: 3.895316
+Assimetria: 6.807227
+Curtose: 72.752814
+Outliers: 1308 (8.57%)
+Valores zero: 13956 (91.43%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Foram identificados possíveis valores extremos.
+Mais da metade dos valores é igual a zero.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_src_ltm
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 771
+Média: 4.022731
+Mediana: 3.000000
+Desvio padrão: 4.965819
+Mínimo: 0.114789
+Máximo: 45.000000
+Q1: 1.000000
+Q3: 4.000000
+IQR: 3.000000
+Coeficiente de variação: 1.234440
+Assimetria: 3.322835
+Curtose: 12.026920
+Outliers: 1116 (7.31%)
+Valores zero: 0 (0.00%)
+
+INTERPRETAÇÃO:
+
+Forte assimetria positiva.
+Curtose elevada, indicando caudas potencialmente pesadas.
+Elevada dispersão relativa dos dados.
+Foram identificados possíveis valores extremos.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_srv_dst
+---------------------------------------------------------------------------
+
+Observações válidas: 15264
+Valores distintos: 739
+Média: 4.394157
+Mediana: 4.000000
+Desvio padrão: 3.091778
+Mínimo: 0.065117
+Máximo: 20.000000
+Q1: 1.166048
+Q3: 6.000000
+IQR: 4.833952
+Coeficiente de variação: 0.703611
+Assimetria: 0.875702
+Curtose: 0.332498
+Outliers: 131 (0.86%)
+Valores zero: 0 (0.00%)
+
+INTERPRETAÇÃO:
+
+Assimetria positiva moderada.
+Curtose próxima da referência de uma distribuição normal.
+Elevada dispersão relativa dos dados.
+Foram identificados possíveis valores extremos.
+
+===========================================================================
+4. ANÁLISE DAS VARIÁVEIS CATEGÓRICAS
+===========================================================================
+
+
+---------------------------------------------------------------------------
+VARIÁVEL: proto
+---------------------------------------------------------------------------
+
+Observações válidas: 14963
+Categorias distintas: 129
+
+Categoria                           Quantidade      Percentual
+-----------------------------------------------------------------
+unas                                      5314          35.51%
+tcp                                       2514          16.80%
+ospf                                       885           5.91%
+udp                                        437           2.92%
+sctp                                       380           2.54%
+any                                        123           0.82%
+gre                                         99           0.66%
+sun-nd                                      79           0.53%
+rsvp                                        78           0.52%
+mobile                                      77           0.51%
+ipv6                                        72           0.48%
+swipe                                       68           0.45%
+pim                                         67           0.45%
+sep                                         59           0.39%
+irtp                                        54           0.36%
+smp                                         53           0.35%
+bbn-rcc                                     53           0.35%
+xnet                                        53           0.35%
+ipv6-frag                                   53           0.35%
+ptp                                         52           0.35%
+st2                                         51           0.34%
+iso-tp4                                     51           0.34%
+tp++                                        48           0.32%
+pup                                         48           0.32%
+ipcv                                        47           0.31%
+uti                                         46           0.31%
+chaos                                       46           0.31%
+trunk-1                                     46           0.31%
+aes-sp3-d                                   46           0.31%
+i-nlsp                                      46           0.31%
+cphb                                        46           0.31%
+encap                                       45           0.30%
+ipcomp                                      45           0.30%
+ttp                                         45           0.30%
+cpnx                                        45           0.30%
+pnni                                        45           0.30%
+isis                                        44           0.29%
+hmp                                         44           0.29%
+rvd                                         44           0.29%
+tcf                                         44           0.29%
+sat-mon                                     44           0.29%
+pipe                                        44           0.29%
+fire                                        43           0.29%
+crtp                                        43           0.29%
+mhrp                                        43           0.29%
+larp                                        43           0.29%
+compaq-peer                                 43           0.29%
+crudp                                       43           0.29%
+sccopmce                                    43           0.29%
+sm                                          43           0.29%
+qnx                                         42           0.28%
+zero                                        42           0.28%
+igp                                         42           0.28%
+skip                                        42           0.28%
+merit-inp                                   42           0.28%
+secure-vmtp                                 42           0.28%
+vines                                       42           0.28%
+visa                                        42           0.28%
+snp                                         42           0.28%
+ib                                          42           0.28%
+srp                                         41           0.27%
+egp                                         41           0.27%
+ipv6-route                                  41           0.27%
+mtp                                         41           0.27%
+ax.25                                       41           0.27%
+micp                                        41           0.27%
+ip                                          41           0.27%
+vrrp                                        41           0.27%
+ipx-n-ip                                    41           0.27%
+aris                                        40           0.27%
+ddx                                         40           0.27%
+sps                                         40           0.27%
+prm                                         40           0.27%
+sat-expak                                   40           0.27%
+iso-ip                                      40           0.27%
+argus                                       40           0.27%
+br-sat-mon                                  40           0.27%
+ddp                                         40           0.27%
+eigrp                                       40           0.27%
+stp                                         39           0.26%
+emcon                                       39           0.26%
+leaf-1                                      39           0.26%
+sdrp                                        39           0.26%
+dgp                                         39           0.26%
+kryptolan                                   39           0.26%
+cbt                                         39           0.26%
+l2tp                                        39           0.26%
+iplt                                        39           0.26%
+ipnip                                       38           0.25%
+nvp                                         38           0.25%
+xtp                                         38           0.25%
+idpr-cmtp                                   38           0.25%
+il                                          38           0.25%
+trunk-2                                     38           0.25%
+wsn                                         38           0.25%
+mux                                         38           0.25%
+leaf-2                                      38           0.25%
+pri-enc                                     38           0.25%
+nsfnet-igp                                  38           0.25%
+gmtp                                        37           0.25%
+ifmp                                        37           0.25%
+fc                                          37           0.25%
+ggp                                         37           0.25%
+xns-idp                                     37           0.25%
+mfe-nsp                                     37           0.25%
+netblt                                      37           0.25%
+pvp                                         37           0.25%
+bna                                         37           0.25%
+cftp                                        37           0.25%
+iatp                                        37           0.25%
+rdp                                         36           0.24%
+idpr                                        36           0.24%
+ipv6-no                                     36           0.24%
+ipv6-opts                                   36           0.24%
+dcn                                         36           0.24%
+ippc                                        36           0.24%
+wb-mon                                      36           0.24%
+vmtp                                        36           0.24%
+tlsp                                        36           0.24%
+ipip                                        36           0.24%
+a/n                                         35           0.23%
+pgm                                         35           0.23%
+3pc                                         35           0.23%
+idrp                                        35           0.23%
+narp                                        35           0.23%
+sprite-rpc                                  35           0.23%
+etherip                                     35           0.23%
+wb-expak                                    35           0.23%
+scps                                        34           0.23%
+
+INTERPRETAÇÃO:
+A distribuição apresenta maior diversificação.
+
+---------------------------------------------------------------------------
+VARIÁVEL: service
+---------------------------------------------------------------------------
+
+Observações válidas: 15111
+Categorias distintas: 11
+
+Categoria                           Quantidade      Percentual
+-----------------------------------------------------------------
+-                                        13224          87.51%
+http                                      1281           8.48%
+smtp                                       298           1.97%
+dns                                        126           0.83%
+pop3                                        61           0.40%
+ftp                                         50           0.33%
+dhcp                                        41           0.27%
+snmp                                        14           0.09%
+ftp-data                                     8           0.05%
+irc                                          4           0.03%
+ssl                                          4           0.03%
+
+INTERPRETAÇÃO:
+Existe forte concentração em uma única categoria.
+
+---------------------------------------------------------------------------
+VARIÁVEL: state
+---------------------------------------------------------------------------
+
+Observações válidas: 15248
+Categorias distintas: 5
+
+Categoria                           Quantidade      Percentual
+-----------------------------------------------------------------
+INT                                      12127          79.53%
+FIN                                       2418          15.86%
+CON                                        400           2.62%
+REQ                                        301           1.97%
+RST                                          2           0.01%
+
+INTERPRETAÇÃO:
+Existe concentração moderada em uma categoria.
+
+===========================================================================
+5. ANÁLISE DAS VARIÁVEIS BINÁRIAS
+===========================================================================
+
+
+---------------------------------------------------------------------------
+VARIÁVEL: is_ftp_login
+---------------------------------------------------------------------------
+
+Valor 0.0: 15246 (99.88%)
+Valor 1.0: 17 (0.11%)
+Valor 0.756437: 1 (0.01%)
+
+INTERPRETAÇÃO:
+Existe forte predominância de um dos valores.
+
+---------------------------------------------------------------------------
+VARIÁVEL: is_sm_ips_ports
+---------------------------------------------------------------------------
+
+Valor 0.0: 15264 (100.00%)
+
+INTERPRETAÇÃO:
+A variável apresenta apenas um valor distinto.
+
+===========================================================================
+6. IDENTIFICAÇÃO DA CLASSE
+===========================================================================
+
+Class ID: 2
+Class name: DoS
+Total de registros: 15264
+
+Este relatório considera exclusivamente as amostras pertencentes à classe identificada acima.
+
+===========================================================================
+7. CLASSIFICAÇÃO DOS TIPOS DE VARIÁVEIS
+===========================================================================
+
+Total de features: 42
+
+Numéricas: 37 (88.10%)
+  - dur
+  - spkts
+  - dpkts
+  - sbytes
+  - dbytes
+  - rate
+  - sttl
+  - dttl
+  - sload
+  - dload
+  - sloss
+  - dloss
+  - sinpkt
+  - dinpkt
+  - sjit
+  - djit
+  - swin
+  - stcpb
+  - dtcpb
+  - dwin
+  - tcprtt
+  - synack
+  - ackdat
+  - smean
+  - dmean
+  - trans_depth
+  - response_body_len
+  - ct_srv_src
+  - ct_state_ttl
+  - ct_dst_ltm
+  - ct_src_dport_ltm
+  - ct_dst_sport_ltm
+  - ct_dst_src_ltm
+  - ct_ftp_cmd
+  - ct_flw_http_mthd
+  - ct_src_ltm
+  - ct_srv_dst
+
+Categóricas: 3 (7.14%)
+  - proto
+  - service
+  - state
+
+Binárias: 2 (4.76%)
+  - is_ftp_login
+  - is_sm_ips_ports
+
+
+===========================================================================
+CONCLUSÃO GERAL
+===========================================================================
+
+O conjunto analisado contém 15264 registros pertencentes à classe DoS.
+
+As features numéricas foram avaliadas por meio de medidas de tendência central, dispersão, assimetria, curtose e identificação de possíveis valores extremos.
+
+As variáveis categóricas e binárias foram avaliadas por suas distribuições de frequência.
+
+Os resultados devem ser interpretados considerando as características do conjunto de dados e o contexto de aplicação.

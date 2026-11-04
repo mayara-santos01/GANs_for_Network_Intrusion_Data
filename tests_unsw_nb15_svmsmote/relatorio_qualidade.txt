@@ -1,0 +1,1481 @@
+RELATÓRIO DE ANÁLISE DA QUALIDADE DOS DADOS
+Data da análise: 04/11/2026 08:35:32
+Arquivo analisado: svmsmote_merged.csv
+Quantidade de registros: 110086
+Quantidade de atributos: 42
+
+Este relatório apresenta uma avaliação da qualidade dos dados, incluindo valores ausentes, duplicatas, distribuições, características estatísticas e interpretações das variáveis.
+
+===========================================================================
+1. ANÁLISE DE VALORES AUSENTES
+===========================================================================
+
+Total de células analisadas: 4843784
+Total de valores ausentes ou vazios: 5448
+Percentual de valores ausentes ou vazios: 0.11%
+
+Interpretação: Foram encontrados valores ausentes ou vazios. Esses registros devem ser avaliados antes da aplicação de algoritmos de aprendizado de máquina.
+
+Variáveis com valores ausentes ou vazios:
+- proto: 3704 (3.36%)
+- service: 1544 (1.40%)
+- state: 200 (0.18%)
+
+===========================================================================
+2. ANÁLISE DE REGISTROS DUPLICADOS
+===========================================================================
+
+Registros duplicados: 44327
+Percentual de duplicatas: 40.27%
+
+Interpretação: Foram identificados registros duplicados. É recomendável verificar se representam repetições indevidas ou ocorrências legítimas do mesmo padrão.
+Observação: em conjuntos de dados utilizados para balanceamento ou geração de amostras, algumas repetições podem ser esperadas e não representam necessariamente erros.
+
+===========================================================================
+3. ANÁLISE ESTATÍSTICA INTERPRETATIVA DAS VARIÁVEIS NUMÉRICAS
+===========================================================================
+
+As variáveis numéricas são avaliadas considerando medidas de tendência central, dispersão, assimetria, curtose, frequência de zeros e possíveis valores extremos.
+As interpretações são indicativas e devem ser consideradas em conjunto com o significado de cada atributo.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dur
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 2.0184
+Mediana: 0.0000
+Desvio padrão: 9.0737
+Valor mínimo: -29.7556
+Valor máximo: 89.4433
+Coeficiente de variação: 4.4956
+Assimetria: 5.7641
+Curtose: 34.0128
+Possíveis valores extremos: 10042 (9.12%)
+Valores iguais a zero: 24 (0.02%)
+Valores distintos: 38541
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+A variável apresenta ocorrências iguais a zero. A interpretação desses valores depende do significado do atributo no domínio analisado.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: spkts
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 13.8408
+Mediana: 2.0000
+Desvio padrão: 136.3974
+Valor mínimo: -279.2561
+Valor máximo: 9616.0000
+Coeficiente de variação: 9.8547
+Assimetria: 41.2926
+Curtose: 1968.2719
+Possíveis valores extremos: 7807 (7.09%)
+Valores iguais a zero: 0 (0.00%)
+Valores distintos: 2345
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dpkts
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 8.8722
+Mediana: 0.0000
+Desvio padrão: 112.1700
+Valor mínimo: -59.9415
+Valor máximo: 10974.0000
+Coeficiente de variação: 12.6429
+Assimetria: 53.4923
+Curtose: 3739.6149
+Possíveis valores extremos: 5109 (4.64%)
+Valores iguais a zero: 69007 (62.68%)
+Valores distintos: 3136
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: sbytes
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 8763.2059
+Mediana: 200.0000
+Desvio padrão: 177931.3510
+Valor mínimo: -383736.0000
+Valor máximo: 12965230.0000
+Coeficiente de variação: 20.3044
+Assimetria: 43.5409
+Curtose: 2124.5113
+Possíveis valores extremos: 11588 (10.53%)
+Valores iguais a zero: 0 (0.00%)
+Valores distintos: 11208
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foi identificada uma proporção elevada de possíveis valores extremos. Isso pode indicar uma distribuição com caudas pesadas, assimetria acentuada ou observações que merecem investigação.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dbytes
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 6149.1156
+Mediana: 0.0000
+Desvio padrão: 147075.0183
+Valor mínimo: -2577.4830
+Valor máximo: 14655550.0000
+Coeficiente de variação: 23.9181
+Assimetria: 56.6294
+Curtose: 4034.7728
+Possíveis valores extremos: 14989 (13.62%)
+Valores iguais a zero: 69007 (62.68%)
+Valores distintos: 8345
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foi identificada uma proporção elevada de possíveis valores extremos. Isso pode indicar uma distribuição com caudas pesadas, assimetria acentuada ou observações que merecem investigação.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: rate
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 123619.6483
+Mediana: 111111.1000
+Desvio padrão: 175055.2591
+Valor mínimo: -134894.2000
+Valor máximo: 1361136.0000
+Coeficiente de variação: 1.4161
+Assimetria: 2.9805
+Curtose: 11.6164
+Possíveis valores extremos: 4431 (4.03%)
+Valores iguais a zero: 341 (0.31%)
+Valores distintos: 38629
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+A variável apresenta ocorrências iguais a zero. A interpretação desses valores depende do significado do atributo no domínio analisado.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: sttl
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 229.8529
+Mediana: 254.0000
+Desvio padrão: 63.9196
+Valor mínimo: -22.9802
+Valor máximo: 296.1343
+Coeficiente de variação: 0.2781
+Assimetria: -2.2831
+Curtose: 3.2568
+Possíveis valores extremos: 13864 (12.59%)
+Valores iguais a zero: 293 (0.27%)
+Valores distintos: 210
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é inferior à mediana, o que pode indicar influência de valores baixos sobre a média.
+A distribuição apresenta forte assimetria negativa, com uma cauda alongada à esquerda.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam dispersão relativa moderada, com alguma variabilidade entre as observações.
+Foi identificada uma proporção elevada de possíveis valores extremos. Isso pode indicar uma distribuição com caudas pesadas, assimetria acentuada ou observações que merecem investigação.
+A variável apresenta ocorrências iguais a zero. A interpretação desses valores depende do significado do atributo no domínio analisado.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dttl
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 92.5469
+Mediana: 0.0000
+Desvio padrão: 121.1191
+Valor mínimo: -23.8365
+Valor máximo: 336.9802
+Coeficiente de variação: 1.3087
+Assimetria: 0.5541
+Curtose: -1.6883
+Possíveis valores extremos: 0 (0.00%)
+Valores iguais a zero: 69007 (62.68%)
+Valores distintos: 33
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta assimetria positiva moderada, indicando maior concentração de valores baixos e uma cauda à direita.
+A distribuição apresenta curtose baixa, indicando caudas relativamente leves e menor concentração de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Não foram identificados valores extremos pelo critério do intervalo interquartil.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: sload
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 103142853.0289
+Mediana: 57000000.0000
+Desvio padrão: 211741363.6665
+Valor mínimo: -266299.9000
+Valor máximo: 5988000000.0000
+Coeficiente de variação: 2.0529
+Assimetria: 7.4896
+Curtose: 96.7838
+Possíveis valores extremos: 10810 (9.82%)
+Valores iguais a zero: 341 (0.31%)
+Valores distintos: 40615
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+A variável apresenta ocorrências iguais a zero. A interpretação desses valores depende do significado do atributo no domínio analisado.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dload
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 13816.7870
+Mediana: 0.0000
+Desvio padrão: 93056.7109
+Valor mínimo: -27178.3000
+Valor máximo: 2447663.0000
+Coeficiente de variação: 6.7350
+Assimetria: 11.8953
+Curtose: 173.1446
+Possíveis valores extremos: 13208 (12.00%)
+Valores iguais a zero: 69007 (62.68%)
+Valores distintos: 36378
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foi identificada uma proporção elevada de possíveis valores extremos. Isso pode indicar uma distribuição com caudas pesadas, assimetria acentuada ou observações que merecem investigação.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: sloss
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 4.0522
+Mediana: 0.0000
+Desvio padrão: 67.3712
+Valor mínimo: -142.6280
+Valor máximo: 4803.0000
+Coeficiente de variação: 16.6259
+Assimetria: 42.7294
+Curtose: 2066.3951
+Possíveis valores extremos: 7962 (7.23%)
+Valores iguais a zero: 70285 (63.85%)
+Valores distintos: 2072
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dloss
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 2.9786
+Mediana: 0.0000
+Desvio padrão: 54.8468
+Valor mínimo: -2.4915
+Valor máximo: 5484.0000
+Coeficiente de variação: 18.4139
+Assimetria: 56.8739
+Curtose: 4086.3346
+Possíveis valores extremos: 9827 (8.93%)
+Valores iguais a zero: 70214 (63.78%)
+Valores distintos: 1735
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: sinpkt
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 210.4237
+Mediana: 0.0090
+Desvio padrão: 1496.2223
+Valor mínimo: -16201.4333
+Valor máximo: 84371.4960
+Coeficiente de variação: 7.1105
+Assimetria: 18.6989
+Curtose: 522.0631
+Possíveis valores extremos: 9366 (8.51%)
+Valores iguais a zero: 340 (0.31%)
+Valores distintos: 38540
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+A variável apresenta ocorrências iguais a zero. A interpretação desses valores depende do significado do atributo no domínio analisado.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dinpkt
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 187.2510
+Mediana: 0.0000
+Desvio padrão: 1199.9101
+Valor mínimo: -4833.6705
+Valor máximo: 21354.3531
+Coeficiente de variação: 6.4080
+Assimetria: 8.2187
+Curtose: 73.5184
+Possíveis valores extremos: 7148 (6.49%)
+Valores iguais a zero: 69007 (62.68%)
+Valores distintos: 36213
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: sjit
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 13443.2798
+Mediana: 0.0000
+Desvio padrão: 91419.4899
+Valor mínimo: -388660.0000
+Valor máximo: 1402394.0000
+Coeficiente de variação: 6.8004
+Assimetria: 8.0420
+Curtose: 69.1466
+Possíveis valores extremos: 9436 (8.57%)
+Valores iguais a zero: 65566 (59.56%)
+Valores distintos: 37219
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: djit
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 650.4521
+Mediana: 0.0000
+Desvio padrão: 3598.7347
+Valor mínimo: -12813.9789
+Valor máximo: 188290.9172
+Coeficiente de variação: 5.5327
+Assimetria: 10.1941
+Curtose: 236.0855
+Possíveis valores extremos: 10562 (9.59%)
+Valores iguais a zero: 69737 (63.35%)
+Valores distintos: 36111
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: swin
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 93.0162
+Mediana: 0.0000
+Desvio padrão: 122.7487
+Valor mínimo: 0.0000
+Valor máximo: 255.0000
+Coeficiente de variação: 1.3196
+Assimetria: 0.5619
+Curtose: -1.6843
+Possíveis valores extremos: 0 (0.00%)
+Valores iguais a zero: 69930 (63.52%)
+Valores distintos: 2
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta assimetria positiva moderada, indicando maior concentração de valores baixos e uma cauda à direita.
+A distribuição apresenta curtose baixa, indicando caudas relativamente leves e menor concentração de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Não foram identificados valores extremos pelo critério do intervalo interquartil.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: stcpb
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 775500013.3519
+Mediana: 0.0000
+Desvio padrão: 1290455939.0650
+Valor mínimo: -2477480.0000
+Valor máximo: 4294959000.0000
+Coeficiente de variação: 1.6640
+Assimetria: 1.4458
+Curtose: 0.6200
+Possíveis valores extremos: 10683 (9.70%)
+Valores iguais a zero: 69930 (63.52%)
+Valores distintos: 35093
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A curtose não indica um afastamento acentuado em relação à referência de uma distribuição normal.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dtcpb
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 800127483.6319
+Mediana: 0.0000
+Desvio padrão: 1307560700.8790
+Valor mínimo: 0.0000
+Valor máximo: 4294551000.0000
+Coeficiente de variação: 1.6342
+Assimetria: 1.4177
+Curtose: 0.5538
+Possíveis valores extremos: 9972 (9.06%)
+Valores iguais a zero: 69930 (63.52%)
+Valores distintos: 34994
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A curtose não indica um afastamento acentuado em relação à referência de uma distribuição normal.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dwin
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 93.0162
+Mediana: 0.0000
+Desvio padrão: 122.7487
+Valor mínimo: 0.0000
+Valor máximo: 255.0000
+Coeficiente de variação: 1.3196
+Assimetria: 0.5619
+Curtose: -1.6843
+Possíveis valores extremos: 0 (0.00%)
+Valores iguais a zero: 69930 (63.52%)
+Valores distintos: 2
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta assimetria positiva moderada, indicando maior concentração de valores baixos e uma cauda à direita.
+A distribuição apresenta curtose baixa, indicando caudas relativamente leves e menor concentração de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Não foram identificados valores extremos pelo critério do intervalo interquartil.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: tcprtt
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 0.0496
+Mediana: 0.0000
+Desvio padrão: 0.0752
+Valor mínimo: -0.0170
+Valor máximo: 1.4907
+Coeficiente de variação: 1.5147
+Assimetria: 1.4407
+Curtose: 2.6324
+Possíveis valores extremos: 1260 (1.14%)
+Valores iguais a zero: 69953 (63.54%)
+Valores distintos: 32155
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: synack
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 0.0245
+Mediana: 0.0000
+Desvio padrão: 0.0397
+Valor mínimo: -0.0153
+Valor máximo: 0.5131
+Coeficiente de variação: 1.6192
+Assimetria: 1.7211
+Curtose: 3.5797
+Possíveis valores extremos: 3167 (2.88%)
+Valores iguais a zero: 69953 (63.54%)
+Valores distintos: 30439
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ackdat
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 0.0251
+Mediana: 0.0000
+Desvio padrão: 0.0385
+Valor mínimo: -0.0116
+Valor máximo: 1.4241
+Coeficiente de variação: 1.5316
+Assimetria: 1.9141
+Curtose: 18.0959
+Possíveis valores extremos: 1949 (1.77%)
+Valores iguais a zero: 69953 (63.54%)
+Valores distintos: 29103
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: smean
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 138.7067
+Mediana: 85.0000
+Desvio padrão: 205.7024
+Valor mínimo: -404.7961
+Valor máximo: 1834.5745
+Coeficiente de variação: 1.4830
+Assimetria: 3.9654
+Curtose: 16.0859
+Possíveis valores extremos: 12848 (11.67%)
+Valores iguais a zero: 0 (0.00%)
+Valores distintos: 7048
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foi identificada uma proporção elevada de possíveis valores extremos. Isso pode indicar uma distribuição com caudas pesadas, assimetria acentuada ou observações que merecem investigação.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: dmean
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 54.4199
+Mediana: 0.0000
+Desvio padrão: 163.9072
+Valor mínimo: -303.9151
+Valor máximo: 1645.2317
+Coeficiente de variação: 3.0119
+Assimetria: 5.4862
+Curtose: 32.8238
+Possíveis valores extremos: 11064 (10.05%)
+Valores iguais a zero: 69007 (62.68%)
+Valores distintos: 4719
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foi identificada uma proporção elevada de possíveis valores extremos. Isso pode indicar uma distribuição com caudas pesadas, assimetria acentuada ou observações que merecem investigação.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: trans_depth
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 0.1303
+Mediana: 0.0000
+Desvio padrão: 0.9290
+Valor mínimo: -0.4667
+Valor máximo: 172.0000
+Coeficiente de variação: 7.1273
+Assimetria: 149.9777
+Curtose: 26290.4035
+Possíveis valores extremos: 14424 (13.10%)
+Valores iguais a zero: 95662 (86.90%)
+Valores distintos: 1375
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foi identificada uma proporção elevada de possíveis valores extremos. Isso pode indicar uma distribuição com caudas pesadas, assimetria acentuada ou observações que merecem investigação.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: response_body_len
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 1185.0079
+Mediana: 0.0000
+Desvio padrão: 59147.0983
+Valor mínimo: -27.4312
+Valor máximo: 6558056.0000
+Coeficiente de variação: 49.9128
+Assimetria: 89.6919
+Curtose: 8642.9942
+Possíveis valores extremos: 8075 (7.34%)
+Valores iguais a zero: 102011 (92.66%)
+Valores distintos: 2465
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_srv_src
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 8.0470
+Mediana: 4.0000
+Desvio padrão: 9.7758
+Valor mínimo: -17.4551
+Valor máximo: 59.7655
+Coeficiente de variação: 1.2148
+Assimetria: 1.8304
+Curtose: 2.4913
+Possíveis valores extremos: 15118 (13.73%)
+Valores iguais a zero: 0 (0.00%)
+Valores distintos: 11779
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foi identificada uma proporção elevada de possíveis valores extremos. Isso pode indicar uma distribuição com caudas pesadas, assimetria acentuada ou observações que merecem investigação.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_state_ttl
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 1.6645
+Mediana: 2.0000
+Desvio padrão: 0.6775
+Valor mínimo: -0.3719
+Valor máximo: 7.9666
+Coeficiente de variação: 0.4070
+Assimetria: 2.4261
+Curtose: 15.6659
+Possíveis valores extremos: 1223 (1.11%)
+Valores iguais a zero: 929 (0.84%)
+Valores distintos: 210
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é inferior à mediana, o que pode indicar influência de valores baixos sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+A variável apresenta ocorrências iguais a zero. A interpretação desses valores depende do significado do atributo no domínio analisado.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_dst_ltm
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 5.2117
+Mediana: 2.0000
+Desvio padrão: 7.4778
+Valor mínimo: -7.6650
+Valor máximo: 51.4449
+Coeficiente de variação: 1.4348
+Assimetria: 2.3843
+Curtose: 5.6850
+Possíveis valores extremos: 17553 (15.94%)
+Valores iguais a zero: 0 (0.00%)
+Valores distintos: 9044
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foi identificada uma proporção elevada de possíveis valores extremos. Isso pode indicar uma distribuição com caudas pesadas, assimetria acentuada ou observações que merecem investigação.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_src_dport_ltm
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 4.8213
+Mediana: 2.0000
+Desvio padrão: 7.2742
+Valor mínimo: -5.4857
+Valor máximo: 51.0000
+Coeficiente de variação: 1.5088
+Assimetria: 2.5193
+Curtose: 6.4287
+Possíveis valores extremos: 18664 (16.95%)
+Valores iguais a zero: 0 (0.00%)
+Valores distintos: 7300
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foi identificada uma proporção elevada de possíveis valores extremos. Isso pode indicar uma distribuição com caudas pesadas, assimetria acentuada ou observações que merecem investigação.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_dst_sport_ltm
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 3.9431
+Mediana: 1.0000
+Desvio padrão: 5.1698
+Valor mínimo: -1.4371
+Valor máximo: 31.0000
+Coeficiente de variação: 1.3111
+Assimetria: 1.8155
+Curtose: 1.9344
+Possíveis valores extremos: 17319 (15.73%)
+Valores iguais a zero: 0 (0.00%)
+Valores distintos: 6345
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foi identificada uma proporção elevada de possíveis valores extremos. Isso pode indicar uma distribuição com caudas pesadas, assimetria acentuada ou observações que merecem investigação.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_dst_src_ltm
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 8.0310
+Mediana: 4.0000
+Desvio padrão: 9.9752
+Valor mínimo: -17.4551
+Valor máximo: 65.0000
+Coeficiente de variação: 1.2421
+Assimetria: 1.7509
+Curtose: 2.1828
+Possíveis valores extremos: 12844 (11.67%)
+Valores iguais a zero: 0 (0.00%)
+Valores distintos: 9699
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foi identificada uma proporção elevada de possíveis valores extremos. Isso pode indicar uma distribuição com caudas pesadas, assimetria acentuada ou observações que merecem investigação.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_ftp_cmd
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 0.0095
+Mediana: 0.0000
+Desvio padrão: 0.1029
+Valor mínimo: -0.4655
+Valor máximo: 4.0000
+Coeficiente de variação: 10.7918
+Assimetria: 13.6304
+Curtose: 284.9564
+Possíveis valores extremos: 1031 (0.94%)
+Valores iguais a zero: 109055 (99.06%)
+Valores distintos: 32
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_flw_http_mthd
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 0.6724
+Mediana: 0.0000
+Desvio padrão: 3.4314
+Valor mínimo: -1.4395
+Valor máximo: 30.0000
+Coeficiente de variação: 5.1031
+Assimetria: 6.2792
+Curtose: 39.7572
+Possíveis valores extremos: 14424 (13.10%)
+Valores iguais a zero: 95662 (86.90%)
+Valores distintos: 1802
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foi identificada uma proporção elevada de possíveis valores extremos. Isso pode indicar uma distribuição com caudas pesadas, assimetria acentuada ou observações que merecem investigação.
+Mais da metade das observações apresenta valor zero. É importante verificar se esses zeros representam ausência real de ocorrência ou alguma forma de codificação dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Avaliar a elevada frequência de zeros e sua relação com o significado da variável.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_src_ltm
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 6.4064
+Mediana: 2.9104
+Desvio padrão: 8.0465
+Valor mínimo: -13.5278
+Valor máximo: 55.1527
+Coeficiente de variação: 1.2560
+Assimetria: 1.9271
+Curtose: 3.4630
+Possíveis valores extremos: 8857 (8.05%)
+Valores iguais a zero: 0 (0.00%)
+Valores distintos: 11183
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foram identificados possíveis valores extremos. Essas observações devem ser investigadas para verificar se representam comportamentos legítimos ou problemas de qualidade dos dados.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+---------------------------------------------------------------------------
+VARIÁVEL: ct_srv_dst
+---------------------------------------------------------------------------
+
+Quantidade de observações válidas: 110086
+Média: 7.7930
+Mediana: 4.0000
+Desvio padrão: 9.8486
+Valor mínimo: -12.9583
+Valor máximo: 59.7655
+Coeficiente de variação: 1.2638
+Assimetria: 1.8356
+Curtose: 2.4743
+Possíveis valores extremos: 13976 (12.70%)
+Valores iguais a zero: 0 (0.00%)
+Valores distintos: 9992
+
+INTERPRETAÇÃO ESTATÍSTICA:
+
+A média é superior à mediana, o que pode indicar influência de valores elevados sobre a média.
+A distribuição apresenta forte assimetria positiva, com uma cauda alongada à direita.
+A distribuição apresenta curtose elevada, sugerindo caudas mais pesadas e possível presença de valores extremos.
+Os dados apresentam elevada dispersão relativa, indicando grande variabilidade entre as observações.
+Foi identificada uma proporção elevada de possíveis valores extremos. Isso pode indicar uma distribuição com caudas pesadas, assimetria acentuada ou observações que merecem investigação.
+
+RECOMENDAÇÕES:
+- Investigar os possíveis valores extremos antes de considerar sua remoção ou transformação.
+- Considerar transformações adequadas, como log1p, quando compatíveis com a natureza dos dados.
+- Avaliar a necessidade de normalização ou padronização dependendo do algoritmo de aprendizado de máquina utilizado.
+- Não assumir normalidade apenas com base nas medidas descritivas; considerar o formato da distribuição e o objetivo da análise.
+
+===========================================================================
+4. DISTRIBUIÇÃO DAS VARIÁVEIS CATEGÓRICAS
+===========================================================================
+
+
+===========================================================================
+ANÁLISE DA VARIÁVEL CATEGÓRICA: PROTO
+===========================================================================
+
+Quantidade de observações válidas: 106382
+Quantidade de categorias distintas: 129
+
+DISTRIBUIÇÃO DE FREQUÊNCIAS:
+
+Categoria                           Quantidade      Percentual
+-----------------------------------------------------------------
+tcp                                      40156          37.75%
+udp                                      34100          32.05%
+unas                                     16079          15.11%
+ospf                                      2649           2.49%
+sctp                                      1058           0.99%
+any                                        290           0.27%
+gre                                        216           0.20%
+sun-nd                                     195           0.18%
+rsvp                                       184           0.17%
+pim                                        183           0.17%
+swipe                                      180           0.17%
+mobile                                     179           0.17%
+ipv6                                       177           0.17%
+sep                                        168           0.16%
+nsfnet-igp                                 166           0.16%
+st2                                        107           0.10%
+ipv6-frag                                  105           0.10%
+smp                                        104           0.10%
+rvd                                        104           0.10%
+mux                                        100           0.09%
+
+Outras 109 categorias não foram exibidas por limite de apresentação.
+
+INTERPRETAÇÃO:
+
+A categoria mais frequente é 'tcp', representando 37.75% das observações.
+Não há uma única categoria concentrando mais da metade das observações, indicando uma distribuição relativamente mais diversificada.
+
+===========================================================================
+ANÁLISE DA VARIÁVEL CATEGÓRICA: SERVICE
+===========================================================================
+
+Quantidade de observações válidas: 108542
+Quantidade de categorias distintas: 13
+
+DISTRIBUIÇÃO DE FREQUÊNCIAS:
+
+Categoria                           Quantidade      Percentual
+-----------------------------------------------------------------
+-                                        69217          63.77%
+dns                                      20262          18.67%
+http                                     13548          12.48%
+smtp                                      2218           2.04%
+ftp                                       1534           1.41%
+ftp-data                                   848           0.78%
+pop3                                       677           0.62%
+snmp                                        94           0.09%
+dhcp                                        74           0.07%
+ssl                                         33           0.03%
+irc                                         23           0.02%
+ssh                                          7           0.01%
+radius                                       7           0.01%
+
+INTERPRETAÇÃO:
+
+A categoria mais frequente é '-', representando 63.77% das observações.
+A distribuição apresenta concentração moderada em uma categoria predominante.
+
+===========================================================================
+ANÁLISE DA VARIÁVEL CATEGÓRICA: STATE
+===========================================================================
+
+Quantidade de observações válidas: 109886
+Quantidade de categorias distintas: 5
+
+DISTRIBUIÇÃO DE FREQUÊNCIAS:
+
+Categoria                           Quantidade      Percentual
+-----------------------------------------------------------------
+INT                                      67728          61.63%
+FIN                                      39973          36.38%
+REQ                                       1131           1.03%
+CON                                       1046           0.95%
+RST                                          8           0.01%
+
+INTERPRETAÇÃO:
+
+A categoria mais frequente é 'INT', representando 61.63% das observações.
+A distribuição apresenta concentração moderada em uma categoria predominante.
+
+===========================================================================
+5. ANÁLISE DAS VARIÁVEIS BINÁRIAS
+===========================================================================
+
+
+===========================================================================
+VARIÁVEL BINÁRIA: IS_FTP_LOGIN
+===========================================================================
+
+Quantidade de observações válidas: 110086
+Quantidade de valores distintos: 32
+
+DISTRIBUIÇÃO:
+
+- Valor 0.0: 109055 ocorrências (99.06%)
+- Valor 1.0: 989 ocorrências (0.90%)
+- Valor 4.0: 10 ocorrências (0.01%)
+- Valor 2.0: 4 ocorrências (0.00%)
+- Valor 0.756437: 1 ocorrências (0.00%)
+- Valor 0.749949: 1 ocorrências (0.00%)
+- Valor 0.757412: 1 ocorrências (0.00%)
+- Valor 0.046597: 1 ocorrências (0.00%)
+- Valor 0.521049: 1 ocorrências (0.00%)
+- Valor 0.847759: 1 ocorrências (0.00%)
+- Valor 0.499655: 1 ocorrências (0.00%)
+- Valor 0.842015: 1 ocorrências (0.00%)
+- Valor 0.937777: 1 ocorrências (0.00%)
+- Valor 0.421234: 1 ocorrências (0.00%)
+- Valor 0.343098: 1 ocorrências (0.00%)
+- Valor 0.109651: 1 ocorrências (0.00%)
+- Valor 0.898433: 1 ocorrências (0.00%)
+- Valor 0.933774: 1 ocorrências (0.00%)
+- Valor 0.433099: 1 ocorrências (0.00%)
+- Valor 0.367208: 1 ocorrências (0.00%)
+- Valor 0.872735: 1 ocorrências (0.00%)
+- Valor 0.649665: 1 ocorrências (0.00%)
+- Valor 0.206987: 1 ocorrências (0.00%)
+- Valor 0.652506: 1 ocorrências (0.00%)
+- Valor 0.894762: 1 ocorrências (0.00%)
+- Valor 0.260429: 1 ocorrências (0.00%)
+- Valor 0.190759: 1 ocorrências (0.00%)
+- Valor 1.173093: 1 ocorrências (0.00%)
+- Valor -0.173627: 1 ocorrências (0.00%)
+- Valor -0.310954: 1 ocorrências (0.00%)
+- Valor -0.437942: 1 ocorrências (0.00%)
+- Valor -0.465492: 1 ocorrências (0.00%)
+
+INTERPRETAÇÃO:
+
+A variável apresenta forte predominância de um dos valores, indicando distribuição bastante desequilibrada.
+
+===========================================================================
+VARIÁVEL BINÁRIA: IS_SM_IPS_PORTS
+===========================================================================
+
+Quantidade de observações válidas: 110086
+Quantidade de valores distintos: 1
+
+DISTRIBUIÇÃO:
+
+- Valor 0.0: 110086 ocorrências (100.00%)
+
+INTERPRETAÇÃO:
+
+A variável apresenta apenas um valor em todas as observações. Portanto, não possui capacidade de diferenciação neste conjunto de dados.
+
+===========================================================================
+6. DISTRIBUIÇÃO DAS CLASSES
+===========================================================================
+
+
+===========================================================================
+DISTRIBUIÇÃO DE CLASS_ID
+===========================================================================
+
+Quantidade de observações: 110086
+Quantidade de classes distintas: 9
+
+Classe                              Quantidade      Percentual
+-----------------------------------------------------------------
+4                                        20184          18.33%
+3                                        20000          18.17%
+5                                        20000          18.17%
+7                                        15491          14.07%
+2                                        15264          13.87%
+0                                         8000           7.27%
+1                                         7746           7.04%
+8                                         3133           2.85%
+9                                          268           0.24%
+
+INTERPRETAÇÃO:
+
+As classes apresentam diferenças de frequência. É recomendável avaliar o impacto dessa distribuição na construção e avaliação dos modelos.
+
+===========================================================================
+DISTRIBUIÇÃO DE CLASS_NAME
+===========================================================================
+
+Quantidade de observações: 110086
+Quantidade de classes distintas: 9
+
+Classe                              Quantidade      Percentual
+-----------------------------------------------------------------
+Fuzzers                                  20184          18.33%
+Exploits                                 20000          18.17%
+Generic                                  20000          18.17%
+Reconnaissance                           15491          14.07%
+DoS                                      15264          13.87%
+Analysis                                  8000           7.27%
+Backdoor                                  7746           7.04%
+Shellcode                                 3133           2.85%
+Worms                                      268           0.24%
+
+INTERPRETAÇÃO:
+
+As classes apresentam diferenças de frequência. É recomendável avaliar o impacto dessa distribuição na construção e avaliação dos modelos.
+
+===========================================================================
+7. CLASSIFICAÇÃO DOS TIPOS DE VARIÁVEIS
+===========================================================================
+
+Total de atributos analisados: 42
+
+Numéricas: 37 atributos (88.10%)
+Categóricas: 3 atributos (7.14%)
+Binárias: 2 atributos (4.76%)
+
+INTERPRETAÇÃO:
+
+A classificação dos atributos permite compreender a composição do conjunto de dados e orientar a escolha dos métodos de pré-processamento.
+Variáveis numéricas podem exigir normalização ou padronização, dependendo do algoritmo utilizado. Variáveis categóricas podem exigir técnicas de codificação, enquanto variáveis binárias devem ter seus valores interpretados conforme o significado de cada atributo.
+
+===========================================================================
+8. ANÁLISE ESPECÍFICA DA ÚLTIMA VARIÁVEL
+===========================================================================
+
+Última variável identificada: is_sm_ips_ports
+
+DISTRIBUIÇÃO DOS VALORES:
+
+Valor                          Quantidade      Percentual
+-------------------------------------------------------
+0.0                                110086         100.00%
+
+INTERPRETAÇÃO:
+
+A variável is_sm_ips_ports apresenta 1 valores distintos. Recomenda-se verificar sua natureza e o significado de cada categoria antes de definir o tratamento adequado.
+
+===========================================================================
+CONCLUSÃO GERAL
+===========================================================================
+
+A análise realizada permite identificar características estatísticas e possíveis problemas de qualidade no conjunto de dados.
+
+As variáveis numéricas foram avaliadas por meio de interpretações de tendência central, dispersão, assimetria, curtose e possíveis valores extremos. As variáveis categóricas e binárias foram avaliadas por suas distribuições de frequência.
+
+As recomendações apresentadas devem ser consideradas em conjunto com o contexto dos dados e os objetivos da aplicação. A identificação de valores extremos, por exemplo, não significa necessariamente que esses valores sejam erros ou devam ser removidos.
