@@ -1,0 +1,664 @@
+﻿Variável,Estatística,Diferença absoluta,Diferença relativa (%)
+ackdat,Média,0.00718110833064492,35.244368093699904
+ackdat,Mediana,0.0,
+ackdat,Desvio padrão,7.395728378489785e-06,0.01825819235454339
+ackdat,Variância,5.992027086744976e-07,0.036519718324963917
+ackdat,Mínimo,0.0,
+ackdat,Máximo,0.588324,38.68302908045584
+ackdat,Q1,0.0,
+ackdat,Q2,0.0,
+ackdat,Q3,0.016654749999999996,42.80766462756386
+ackdat,IQR,0.016654749999999996,42.80766462756386
+ackdat,Assimetria,3.637835416921126,64.78082339005265
+ackdat,Curtose,95.5931604704539,88.73700707971116
+ackdat,Quantidade de valores únicos,6575.0,
+ackdat,KS - Estatística,0.10385161793305608,
+ackdat,KS - Valor-p,0.0,
+ackdat,Wasserstein,0.0076721089200015415,
+ackdat,Wasserstein normalizada,0.18940506364972876,
+ct_dst_ltm,Média,2.331790010131983,37.64633448765777
+ct_dst_ltm,Mediana,0.0,0.0
+ct_dst_ltm,Desvio padrão,2.0683208679056175,25.685525411690723
+ct_dst_ltm,Variância,29.03225867444376,44.77358866663536
+ct_dst_ltm,Mínimo,0.0,0.0
+ct_dst_ltm,Máximo,0.0,0.0
+ct_dst_ltm,Q1,0.0,0.0
+ct_dst_ltm,Q2,0.0,0.0
+ct_dst_ltm,Q3,4.0,57.14285714285714
+ct_dst_ltm,IQR,4.0,66.66666666666666
+ct_dst_ltm,Assimetria,1.1928592055370602,58.185117852274345
+ct_dst_ltm,Curtose,7.5604980944866575,188.34767646512316
+ct_dst_ltm,Quantidade de valores únicos,13759.0,
+ct_dst_ltm,KS - Estatística,0.17691587170142753,
+ct_dst_ltm,KS - Valor-p,0.0,
+ct_dst_ltm,Wasserstein,2.3317900101319835,
+ct_dst_ltm,Wasserstein normalizada,0.28957427490744975,
+ct_dst_sport_ltm,Média,1.453540519259895,34.55664091683842
+ct_dst_sport_ltm,Mediana,0.0,0.0
+ct_dst_sport_ltm,Desvio padrão,1.67301645661661,28.926979354398263
+ct_dst_sport_ltm,Variância,16.553081907371535,49.486257363098694
+ct_dst_sport_ltm,Mínimo,0.0,0.0
+ct_dst_sport_ltm,Máximo,0.0,0.0
+ct_dst_sport_ltm,Q1,0.0,0.0
+ct_dst_sport_ltm,Q2,0.0,0.0
+ct_dst_sport_ltm,Q3,1.0,33.33333333333333
+ct_dst_sport_ltm,IQR,1.0,50.0
+ct_dst_sport_ltm,Assimetria,1.213497582989848,71.53091953063732
+ct_dst_sport_ltm,Curtose,6.40572913786917,330.5106185311939
+ct_dst_sport_ltm,Quantidade de valores únicos,7410.0,
+ct_dst_sport_ltm,KS - Estatística,0.11377385939398099,
+ct_dst_sport_ltm,KS - Valor-p,0.0,
+ct_dst_sport_ltm,Wasserstein,1.4535405192598954,
+ct_dst_sport_ltm,Wasserstein normalizada,0.2513217154865545,
+ct_dst_src_ltm,Média,2.9877718777559137,34.22465900163713
+ct_dst_src_ltm,Mediana,0.8759684999999999,29.198949999999996
+ct_dst_src_ltm,Desvio padrão,2.7498216769682866,25.098348854208
+ct_dst_src_ltm,Variância,52.69359393218693,43.897426556340754
+ct_dst_src_ltm,Mínimo,0.0,0.0
+ct_dst_src_ltm,Máximo,0.0,0.0
+ct_dst_src_ltm,Q1,0.0,0.0
+ct_dst_src_ltm,Q2,0.8759684999999999,29.198949999999996
+ct_dst_src_ltm,Q3,6.0,50.0
+ct_dst_src_ltm,IQR,6.0,54.54545454545454
+ct_dst_src_ltm,Assimetria,0.9625951672134343,61.888710169180946
+ct_dst_src_ltm,Curtose,4.86144370654936,369.67487255919684
+ct_dst_src_ltm,Quantidade de valores únicos,12444.0,
+ct_dst_src_ltm,KS - Estatística,0.1427402558443262,
+ct_dst_src_ltm,KS - Valor-p,0.0,
+ct_dst_src_ltm,Wasserstein,2.987789065065213,
+ct_dst_src_ltm,Wasserstein normalizada,0.27270340068186,
+ct_flw_http_mthd,Média,0.2241313592078547,168.4356962749205
+ct_flw_http_mthd,Mediana,0.0,
+ct_flw_http_mthd,Desvio padrão,1.0524502980614043,150.091112522206
+ct_flw_http_mthd,Variância,2.583623939343453,525.455645625947
+ct_flw_http_mthd,Mínimo,0.0,
+ct_flw_http_mthd,Máximo,0.0,0.0
+ct_flw_http_mthd,Q1,0.0,
+ct_flw_http_mthd,Q2,0.0,
+ct_flw_http_mthd,Q3,0.0,
+ct_flw_http_mthd,IQR,0.0,
+ct_flw_http_mthd,Assimetria,11.198495996028687,47.75187982267525
+ct_flw_http_mthd,Curtose,659.7386115355262,78.57116458782349
+ct_flw_http_mthd,Quantidade de valores únicos,4257.0,
+ct_flw_http_mthd,KS - Estatística,0.08333539947872992,
+ct_flw_http_mthd,KS - Valor-p,0.0,
+ct_flw_http_mthd,Wasserstein,0.2241313592078548,
+ct_flw_http_mthd,Wasserstein normalizada,0.31963623476173314,
+ct_ftp_cmd,Média,0.007808015581067748,52.234462418924075
+ct_ftp_cmd,Mediana,0.0,
+ct_ftp_cmd,Desvio padrão,0.0372274456589137,29.5343295126118
+ct_ftp_cmd,Variância,0.00799901095859088,50.34589282762829
+ct_ftp_cmd,Mínimo,0.0,
+ct_ftp_cmd,Máximo,0.0,0.0
+ct_ftp_cmd,Q1,0.0,
+ct_ftp_cmd,Q2,0.0,
+ct_ftp_cmd,Q3,0.0,
+ct_ftp_cmd,IQR,0.0,
+ct_ftp_cmd,Assimetria,5.485308583351818,55.166453911969604
+ct_ftp_cmd,Curtose,214.2701873887992,148.3731229610464
+ct_ftp_cmd,Quantidade de valores únicos,0.0,
+ct_ftp_cmd,KS - Estatística,0.0077200442566199845,
+ct_ftp_cmd,KS - Valor-p,0.001005035814961783,
+ct_ftp_cmd,Wasserstein,0.0078080155810678065,
+ct_ftp_cmd,Wasserstein normalizada,0.06194475632943352,
+ct_src_dport_ltm,Média,2.0751154566409977,38.54556830387987
+ct_src_dport_ltm,Mediana,0.0,0.0
+ct_src_dport_ltm,Desvio padrão,2.332433643772248,28.984757579028088
+ct_src_dport_ltm,Variância,32.09842642769988,49.56835343890592
+ct_src_dport_ltm,Mínimo,0.0,0.0
+ct_src_dport_ltm,Máximo,0.0,0.0
+ct_src_dport_ltm,Q1,0.0,0.0
+ct_src_dport_ltm,Q2,0.0,0.0
+ct_src_dport_ltm,Q3,2.82275525,56.455105
+ct_src_dport_ltm,IQR,2.82275525,70.56888125
+ct_src_dport_ltm,Assimetria,1.4182848024196621,65.32300192245086
+ct_src_dport_ltm,Curtose,9.665704125002307,218.34706455674663
+ct_src_dport_ltm,Quantidade de valores únicos,8336.0,
+ct_src_dport_ltm,KS - Estatística,0.1261451574931135,
+ct_src_dport_ltm,KS - Valor-p,0.0,
+ct_src_dport_ltm,Wasserstein,2.0751154566409977,
+ct_src_dport_ltm,Wasserstein normalizada,0.2578710807907835,
+ct_src_ltm,Média,1.970303532533717,28.326096881279604
+ct_src_ltm,Mediana,1.0,33.33333333333333
+ct_src_ltm,Desvio padrão,1.5241309559085954,18.315595599216074
+ct_src_ltm,Variância,23.04311416196561,33.276580776891926
+ct_src_ltm,Mínimo,0.0,0.0
+ct_src_ltm,Máximo,9.0,15.0
+ct_src_ltm,Q1,1.0,50.0
+ct_src_ltm,Q2,1.0,33.33333333333333
+ct_src_ltm,Q3,4.0,44.44444444444444
+ct_src_ltm,IQR,3.0,42.857142857142854
+ct_src_ltm,Assimetria,0.6900046054261262,37.45780668499922
+ct_src_ltm,Curtose,3.578349256232544,115.6147961980729
+ct_src_ltm,Quantidade de valores únicos,19438.0,
+ct_src_ltm,KS - Estatística,0.13767167108662548,
+ct_src_ltm,KS - Valor-p,0.0,
+ct_src_ltm,Wasserstein,1.9703035325337173,
+ct_src_ltm,Wasserstein normalizada,0.23677284796096384,
+ct_srv_dst,Média,3.3973737823485015,37.33066850473816
+ct_srv_dst,Mediana,1.0,25.0
+ct_srv_dst,Desvio padrão,2.7407080389198892,25.478481648167705
+ct_srv_dst,Variância,51.45184903721875,44.46543302537521
+ct_srv_dst,Mínimo,0.0,0.0
+ct_srv_dst,Máximo,0.0,0.0
+ct_srv_dst,Q1,1.0,50.0
+ct_srv_dst,Q2,1.0,25.0
+ct_srv_dst,Q3,6.0,50.0
+ct_srv_dst,IQR,5.0,50.0
+ct_srv_dst,Assimetria,1.085305612795521,70.98026120345911
+ct_srv_dst,Curtose,5.4239106622369375,410.25909257440844
+ct_srv_dst,Quantidade de valores únicos,14817.0,
+ct_srv_dst,KS - Estatística,0.15480900359870198,
+ct_srv_dst,KS - Valor-p,0.0,
+ct_srv_dst,Wasserstein,3.3973737823485024,
+ct_srv_dst,Wasserstein normalizada,0.3158305238512221,
+ct_srv_src,Média,3.3380364341282265,35.868038141713285
+ct_srv_src,Mediana,2.0,40.0
+ct_srv_src,Desvio padrão,2.728291459669501,25.487733922330268
+ct_srv_src,Variância,50.965496612325786,44.47922203970549
+ct_srv_src,Mínimo,0.0,0.0
+ct_srv_src,Máximo,0.0,0.0
+ct_srv_src,Q1,1.0,50.0
+ct_srv_src,Q2,2.0,40.0
+ct_srv_src,Q3,6.0,50.0
+ct_srv_src,IQR,5.0,50.0
+ct_srv_src,Assimetria,1.0766478466683878,70.7772431501434
+ct_srv_src,Curtose,5.390246674496263,401.922108911619
+ct_srv_src,Quantidade de valores únicos,18761.0,
+ct_srv_src,KS - Estatística,0.15292345543826036,
+ct_srv_src,KS - Valor-p,0.0,
+ct_srv_src,Wasserstein,3.338036434128227,
+ct_srv_src,Wasserstein normalizada,0.31183979319574107,
+ct_state_ttl,Média,0.19217068306105767,14.734996124914252
+ct_state_ttl,Mediana,1.0,100.0
+ct_state_ttl,Desvio padrão,0.16977079620866264,17.788108896959802
+ct_state_ttl,Variância,0.29523844342063976,32.4120496126186
+ct_state_ttl,Mínimo,0.0,
+ct_state_ttl,Máximo,0.0,0.0
+ct_state_ttl,Q1,0.0,0.0
+ct_state_ttl,Q2,1.0,100.0
+ct_state_ttl,Q3,0.0,0.0
+ct_state_ttl,IQR,0.0,0.0
+ct_state_ttl,Assimetria,0.43926362911707406,47.31331321433381
+ct_state_ttl,Curtose,4.332757008265002,97.02181901806244
+ct_state_ttl,Quantidade de valores únicos,727.0,
+ct_state_ttl,KS - Estatística,0.15417811658425581,
+ct_state_ttl,KS - Valor-p,0.0,
+ct_state_ttl,Wasserstein,0.20604442844117665,
+ct_state_ttl,Wasserstein normalizada,0.21588758564922583,
+dbytes,Média,194.01747797614553,1.2996083885060519
+dbytes,Mediana,164.0,100.0
+dbytes,Desvio padrão,2110.906155704608,1.469435557994071
+dbytes,Variância,610937069.7453575,2.9604635245791178
+dbytes,Mínimo,0.0,
+dbytes,Máximo,0.0,0.0
+dbytes,Q1,0.0,
+dbytes,Q2,164.0,100.0
+dbytes,Q3,748.0,67.87658802177859
+dbytes,IQR,748.0,67.87658802177859
+dbytes,Assimetria,5.942530237726238,14.945676949297418
+dbytes,Curtose,640.0765152348904,23.39605402314355
+dbytes,Quantidade de valores únicos,7147.0,
+dbytes,KS - Estatística,0.10491554336977671,
+dbytes,KS - Valor-p,0.0,
+dbytes,Wasserstein,5043.519379375833,
+dbytes,Wasserstein normalizada,0.03510874556625303,
+dinpkt,Média,1.7697889532641256,2.0061927617885353
+dinpkt,Mediana,0.006,100.0
+dinpkt,Desvio padrão,332.58468015113783,33.69334141110384
+dinpkt,Variância,545971.579435894,56.03427026775562
+dinpkt,Mínimo,0.0,
+dinpkt,Máximo,9429.419999999998,16.625437277658563
+dinpkt,Q1,0.0,
+dinpkt,Q2,0.006,100.0
+dinpkt,Q3,21.400260000000003,41.91773255244551
+dinpkt,IQR,21.400260000000003,41.91773255244551
+dinpkt,Assimetria,6.324584386694244,21.30959693285604
+dinpkt,Curtose,327.721468465062,28.294078528194433
+dinpkt,Quantidade de valores únicos,30868.0,
+dinpkt,KS - Estatística,0.08029958007539584,
+dinpkt,KS - Valor-p,0.0,
+dinpkt,Wasserstein,26.016115103141903,
+dinpkt,Wasserstein normalizada,0.026356290613337687,
+djit,Média,205.41265271229025,33.98880651267081
+djit,Mediana,0.0,
+djit,Desvio padrão,1142.1143209052502,28.123667782934515
+djit,Variância,7971926.256364787,48.33792867022033
+djit,Mínimo,0.0,
+djit,Máximo,29522.5208,10.201699201769683
+djit,Q1,0.0,
+djit,Q2,0.0,
+djit,Q3,23.826062500000006,20.720004348180566
+djit,IQR,23.826062500000006,20.720004348180566
+djit,Assimetria,6.908187210184018,23.382842059694966
+djit,Curtose,835.7418323963334,62.548451429013355
+djit,Quantidade de valores únicos,33539.0,
+djit,KS - Estatística,0.05933989272332196,
+djit,KS - Valor-p,2.310886414721788e-195,
+djit,Wasserstein,221.8401793012976,
+djit,Wasserstein normalizada,0.05462640113496925,
+dload,Média,442844.3016933226,65.97744695860796
+dload,Mediana,1447.022705,100.0
+dload,Desvio padrão,1026247.114644455,42.383920365231404
+dload,Variância,3916546564914.4165,66.80387367520004
+dload,Mínimo,0.0,
+dload,Máximo,314086.0,1.4007482585751156
+dload,Q1,0.0,
+dload,Q2,1447.022705,100.0
+dload,Q3,22586.965269,81.11714791565946
+dload,IQR,22586.965269,81.11714791565946
+dload,Assimetria,3.9272014190856464,83.71391349675525
+dload,Curtose,57.92654174882988,254.06352912012156
+dload,Quantidade de valores únicos,33186.0,
+dload,KS - Estatística,0.13530374812508206,
+dload,KS - Valor-p,0.0,
+dload,Wasserstein,442844.3016933227,
+dload,Wasserstein normalizada,0.18289432778253428,
+dloss,Média,0.4915759677950726,7.075061441104305
+dloss,Mediana,0.0,
+dloss,Desvio padrão,1.2944204568358089,2.4546687542748393
+dloss,Variância,138.19287038925904,4.969591495481824
+dloss,Mínimo,0.0,
+dloss,Máximo,0.0,0.0
+dloss,Q1,0.0,
+dloss,Q2,0.0,
+dloss,Q3,1.0,50.0
+dloss,IQR,1.0,50.0
+dloss,Assimetria,5.115365353617932,12.361846225096334
+dloss,Curtose,549.2584002185013,18.664057002450942
+dloss,Quantidade de valores únicos,4026.0,
+dloss,KS - Estatística,0.10731583166515535,
+dloss,KS - Valor-p,0.0,
+dloss,Wasserstein,2.1411359418958464,
+dloss,Wasserstein normalizada,0.04060334080376198,
+dmean,Média,37.747889471081436,30.39934067731605
+dmean,Mediana,44.0,100.0
+dmean,Desvio padrão,37.584331605081616,14.549690287112993
+dmean,Variância,18004.765800822453,26.982445699716894
+dmean,Mínimo,0.0,
+dmean,Máximo,0.0,0.0
+dmean,Q1,0.0,
+dmean,Q2,44.0,100.0
+dmean,Q3,44.0,49.43820224719101
+dmean,IQR,44.0,49.43820224719101
+dmean,Assimetria,1.0256178772393052,36.2903376981128
+dmean,Curtose,7.418931739127154,96.56910760437756
+dmean,Quantidade de valores únicos,10096.0,
+dmean,KS - Estatística,0.1401335133824948,
+dmean,KS - Valor-p,0.0,
+dmean,Wasserstein,37.823884074339595,
+dmean,Wasserstein normalizada,0.14642426118412052,
+dpkts,Média,2.6421247565971164,13.9282117400853
+dpkts,Mediana,2.0,100.0
+dpkts,Desvio padrão,0.29416866002421216,0.26679963187563893
+dpkts,Variância,64.95559062770735,0.5343110841869814
+dpkts,Mínimo,0.0,
+dpkts,Máximo,0.0,0.0
+dpkts,Q1,0.0,
+dpkts,Q2,2.0,100.0
+dpkts,Q3,2.0,20.0
+dpkts,IQR,2.0,20.0
+dpkts,Assimetria,6.959022507536012,18.928845759165156
+dpkts,Curtose,723.6835729069394,29.352175932597984
+dpkts,Quantidade de valores únicos,8788.0,
+dpkts,KS - Estatística,0.10977278565766146,
+dpkts,KS - Valor-p,0.0,
+dpkts,Wasserstein,5.0200368929666235,
+dpkts,Wasserstein normalizada,0.04552979895735269,
+dtcpb,Média,21477337.972445726,2.2167248652153733
+dtcpb,Mediana,0.0,
+dtcpb,Desvio padrão,7166974.415221691,0.5293188195815889
+dtcpb,Variância,1.935679468977357e+16,1.055835855035543
+dtcpb,Mínimo,0.0,
+dtcpb,Máximo,42677.0,0.0009936710893381942
+dtcpb,Q1,0.0,
+dtcpb,Q2,0.0,
+dtcpb,Q3,104630334.83377528,5.467508992515954
+dtcpb,IQR,104630334.83377528,5.467508992515954
+dtcpb,Assimetria,0.047930045100461616,4.433791497934795
+dtcpb,Curtose,0.11980710402651051,37.88349689238115
+dtcpb,Quantidade de valores únicos,32332.0,
+dtcpb,KS - Estatística,0.013386777365248292,
+dtcpb,KS - Valor-p,2.4235504183553473e-10,
+dtcpb,Wasserstein,24724555.621709943,
+dtcpb,Wasserstein normalizada,0.01826038693338635,
+dttl,Média,21.638845160995004,27.181212148031875
+dttl,Mediana,29.0,100.0
+dttl,Desvio padrão,10.785994154870139,9.760474458163912
+dttl,Variância,2500.1904305005664,20.473617532812533
+dttl,Mínimo,0.0,
+dttl,Máximo,2.0,0.7874015748031495
+dttl,Q1,0.0,
+dttl,Q2,29.0,100.0
+dttl,Q3,0.0,0.0
+dttl,IQR,0.0,0.0
+dttl,Assimetria,0.46680699983048163,52.156647867391456
+dttl,Curtose,0.6497474610531417,56.50642637845693
+dttl,Quantidade de valores únicos,187.0,
+dttl,KS - Estatística,0.10604676282215797,
+dttl,KS - Valor-p,0.0,
+dttl,Wasserstein,24.474533618440866,
+dttl,Wasserstein normalizada,0.22147523615187995,
+dur,Média,0.2643317895843704,19.444901308620118
+dur,Mediana,0.0005940000000000001,37.547408343868526
+dur,Desvio padrão,0.713114173427412,11.004425743546948
+dur,Variância,9.750846438374907,23.21982534654628
+dur,Mínimo,0.0,
+dur,Máximo,5.3999999998666226e-05,9.000001649778006e-05
+dur,Q1,0.0,0.0
+dur,Q2,0.0005940000000000001,37.547408343868526
+dur,Q3,0.08443999999999996,12.639412994765504
+dur,IQR,0.08443999999999996,12.639564351159544
+dur,Assimetria,0.728874212964782,9.723430175474949
+dur,Curtose,11.505679929228542,19.63128025242194
+dur,Quantidade de valores únicos,29030.0,
+dur,KS - Estatística,0.06913092682259137,
+dur,KS - Valor-p,4.536987824957037e-265,
+dur,Wasserstein,0.26479307558881615,
+dur,Wasserstein normalizada,0.040861559709542736,
+dwin,Média,2.220016462510472,1.9302204107000298
+dwin,Mediana,0.0,
+dwin,Desvio padrão,0.30094999233244835,0.2371804110473529
+dwin,Variância,76.28242928788313,0.4737982766208567
+dwin,Mínimo,0.0,
+dwin,Máximo,0.0,0.0
+dwin,Q1,0.0,
+dwin,Q2,0.0,
+dwin,Q3,0.0,0.0
+dwin,IQR,0.0,0.0
+dwin,Assimetria,0.035444649827496094,18.00866300917925
+dwin,Curtose,0.016024222389114717,0.8170308043500986
+dwin,Quantidade de valores únicos,138.0,
+dwin,KS - Estatística,0.009374004653788903,
+dwin,KS - Valor-p,2.740374712922138e-05,
+dwin,Wasserstein,2.2200164625104843,
+dwin,Wasserstein normalizada,0.017496076774392234,
+is_ftp_login,Média,0.007808015581067748,52.234462418924075
+is_ftp_login,Mediana,0.0,
+is_ftp_login,Desvio padrão,0.0372274456589137,29.5343295126118
+is_ftp_login,Variância,0.00799901095859088,50.34589282762829
+is_ftp_login,Mínimo,0.0,
+is_ftp_login,Máximo,0.0,0.0
+is_ftp_login,Q1,0.0,
+is_ftp_login,Q2,0.0,
+is_ftp_login,Q3,0.0,
+is_ftp_login,IQR,0.0,
+is_ftp_login,Assimetria,5.485308583351818,55.166453911969604
+is_ftp_login,Curtose,214.2701873887992,148.3731229610464
+is_ftp_login,Quantidade de valores únicos,0.0,
+is_ftp_login,KS - Estatística,0.0077200442566199845,
+is_ftp_login,KS - Valor-p,0.001005035814961783,
+is_ftp_login,Wasserstein,0.0078080155810678065,
+is_ftp_login,Wasserstein normalizada,0.06194475632943352,
+is_sm_ips_ports,Média,0.010832162928236976,68.76619406227371
+is_sm_ips_ports,Mediana,0.0,
+is_sm_ips_ports,Desvio padrão,0.054545246378648674,43.805973613891695
+is_sm_ips_ports,Variância,0.010608278155571277,68.42231398517363
+is_sm_ips_ports,Mínimo,0.0,
+is_sm_ips_ports,Máximo,0.0,0.0
+is_sm_ips_ports,Q1,0.0,
+is_sm_ips_ports,Q2,0.0,
+is_sm_ips_ports,Q3,0.0,
+is_sm_ips_ports,IQR,0.0,
+is_sm_ips_ports,Assimetria,6.373231154322165,81.93710247052785
+is_sm_ips_ports,Curtose,139.76589797440093,238.91176825840853
+is_sm_ips_ports,Quantidade de valores únicos,0.0,
+is_sm_ips_ports,KS - Estatística,0.010832162928237077,
+is_sm_ips_ports,KS - Valor-p,6.420958028925996e-07,
+is_sm_ips_ports,Wasserstein,0.010832162928236966,
+is_sm_ips_ports,Wasserstein normalizada,0.08699446329780793,
+rate,Média,8753.593773748085,9.175079771395616
+rate,Mediana,1954.1733544999997,60.579372705217295
+rate,Desvio padrão,2517.7545903098653,1.5222126336818915
+rate,Variância,839217233.6820335,3.067596580385159
+rate,Mínimo,0.0,
+rate,Máximo,0.0,0.0
+rate,Q1,4.072107000000003,12.420208661342878
+rate,Q2,1954.1733544999997,60.579372705217295
+rate,Q3,0.0,0.0
+rate,IQR,4.07210699999996,0.0032585402718398565
+rate,Assimetria,0.1419784224349776,4.2771096199668905
+rate,Curtose,1.0517892720363697,7.4008920985972475
+rate,Quantidade de valores únicos,27038.0,
+rate,KS - Estatística,0.07817541892654889,
+rate,KS - Valor-p,0.0,
+rate,Wasserstein,8983.657555204882,
+rate,Wasserstein normalizada,0.0543144160270268,
+response_body_len,Média,2773.7797664393247,129.35645953557378
+response_body_len,Mediana,0.0,
+response_body_len,Desvio padrão,2851.5070816422594,5.260309921178116
+response_body_len,Variância,317279897.8779597,10.797328447024684
+response_body_len,Mínimo,0.0,
+response_body_len,Máximo,0.0,0.0
+response_body_len,Q1,0.0,
+response_body_len,Q2,0.0,
+response_body_len,Q3,0.0,
+response_body_len,IQR,0.0,
+response_body_len,Assimetria,11.059440900891659,14.487070978382693
+response_body_len,Curtose,1350.3838602961687,17.422108780809754
+response_body_len,Quantidade de valores únicos,3328.0,
+response_body_len,KS - Estatística,0.025090858669677862,
+response_body_len,KS - Valor-p,2.930154406438788e-35,
+response_body_len,Wasserstein,3187.9930995646737,
+response_body_len,Wasserstein normalizada,0.05881041586131791,
+sbytes,Média,2663.858969476625,30.11764841700031
+sbytes,Mediana,58.89266699999996,13.695969069767433
+sbytes,Desvio padrão,27045.195610641036,15.4751213932811
+sbytes,Variância,8721699467.12107,28.555448965194348
+sbytes,Mínimo,18.0,64.28571428571429
+sbytes,Máximo,370838.0,2.8602494070102713
+sbytes,Q1,86.0,75.43859649122807
+sbytes,Q2,58.89266699999996,13.695969069767433
+sbytes,Q3,354.0,24.964739069111424
+sbytes,IQR,440.0,33.74233128834356
+sbytes,Assimetria,12.342219611457956,27.24344734388356
+sbytes,Curtose,1352.8651938106823,58.4421246034874
+sbytes,Quantidade de valores únicos,17194.0,
+sbytes,KS - Estatística,0.16173148613273564,
+sbytes,KS - Valor-p,0.0,
+sbytes,Wasserstein,2699.150162412826,
+sbytes,Wasserstein normalizada,0.01544439797122356,
+sinpkt,Média,593.9139370575244,60.2360926445407
+sinpkt,Mediana,0.265084,94.76322064254127
+sinpkt,Desvio padrão,3093.2822625223616,42.7116440183344
+sinpkt,Variância,35236226.045684405,67.18044268917959
+sinpkt,Mínimo,0.0,
+sinpkt,Máximo,0.0,0.0
+sinpkt,Q1,0.0,0.0
+sinpkt,Q2,0.265084,94.76322064254127
+sinpkt,Q3,13.70344,24.84447275640747
+sinpkt,IQR,13.703440000000008,24.84807674119171
+sinpkt,Assimetria,5.966879605328898,75.36284543600446
+sinpkt,Curtose,133.5415046638948,218.10925271506827
+sinpkt,Quantidade de valores únicos,27264.0,
+sinpkt,KS - Estatística,0.07826992625797724,
+sinpkt,KS - Valor-p,0.0,
+sinpkt,Wasserstein,606.1545737377159,
+sinpkt,Wasserstein normalizada,0.08369704468049134,
+sjit,Média,445.40142639679016,8.950536008604262
+sjit,Mediana,0.0,
+sjit,Desvio padrão,1915.2947297188948,4.259443284141468
+sjit,Variância,168577343.80940866,8.33745799737477
+sjit,Mínimo,0.0,
+sjit,Máximo,271553.64100000006,18.593451332784277
+sjit,Q1,0.0,
+sjit,Q2,0.0,
+sjit,Q3,865.2437454999999,34.42666853508772
+sjit,IQR,865.2437454999999,34.42666853508772
+sjit,Assimetria,1.2078881528823722,6.842722620277623
+sjit,Curtose,43.55896327936381,12.425539873084956
+sjit,Quantidade de valores únicos,32502.0,
+sjit,KS - Estatística,0.07506394243217496,
+sjit,KS - Valor-p,1.677738354664e-312,
+sjit,Wasserstein,719.6311859660402,
+sjit,Wasserstein normalizada,0.016003950590788126,
+sload,Média,22790476.786121532,31.026855565452788
+sload,Mediana,1037844.8125,117.98051637835461
+sload,Desvio padrão,24034300.79113573,12.759941894471428
+sload,Variância,9631726689425364.0,27.148044960445738
+sload,Mínimo,0.0,
+sload,Máximo,1080000000.0,18.036071373207367
+sload,Q1,2464.6535624999997,18.88140334856717
+sload,Q2,1037844.8125,117.98051637835461
+sload,Q3,11111112.0,12.500001125000013
+sload,IQR,11113576.653562501,12.504610163085244
+sload,Assimetria,2.3138592122168946,26.58569678535288
+sload,Curtose,61.69194276914942,47.62655842014415
+sload,Quantidade de valores únicos,28787.0,
+sload,KS - Estatística,0.115657603298715,
+sload,KS - Valor-p,0.0,
+sload,Wasserstein,23200018.966115355,
+sload,Wasserstein normalizada,0.12317017105296794,
+sloss,Média,1.6809852401256618,33.93872779860463
+sloss,Mediana,0.0,
+sloss,Desvio padrão,10.01355020358828,15.170882998710592
+sloss,Variância,1221.6187469839424,28.040209087815498
+sloss,Mínimo,0.0,
+sloss,Máximo,58.0,1.2075785967103894
+sloss,Q1,0.0,
+sloss,Q2,0.0,
+sloss,Q3,1.0,33.33333333333333
+sloss,IQR,1.0,33.33333333333333
+sloss,Assimetria,12.140611275527071,27.12763779188397
+sloss,Curtose,1327.7360344722924,58.28617916645234
+sloss,Quantidade de valores únicos,1943.0,
+sloss,KS - Estatística,0.12777608642587868,
+sloss,KS - Valor-p,0.0,
+sloss,Wasserstein,1.6819682754681886,
+sloss,Wasserstein normalizada,0.02548241472392789,
+smean,Média,0.7862773313223954,0.5749668430021752
+smean,Mediana,23.0,31.506849315068493
+smean,Desvio padrão,21.73805321868184,10.620643759696637
+smean,Variância,8426.031713063843,20.11330678068943
+smean,Mínimo,0.0,0.0
+smean,Máximo,0.0,0.0
+smean,Q1,2.0,3.508771929824561
+smean,Q2,23.0,31.506849315068493
+smean,Q3,0.0,0.0
+smean,IQR,2.0,4.651162790697675
+smean,Assimetria,0.4312591702980817,11.57238662403005
+smean,Curtose,4.202603839683677,29.677974729447794
+smean,Quantidade de valores únicos,19204.0,
+smean,KS - Estatística,0.18821829395292605,
+smean,KS - Valor-p,0.0,
+smean,Wasserstein,16.2875466024652,
+smean,Wasserstein normalizada,0.07957668906412294,
+spkts,Média,5.658965654392258,27.878513211631216
+spkts,Mediana,0.0,0.0
+spkts,Desvio padrão,21.767911796390536,15.902033703659846
+spkts,Variância,5485.6722870373815,29.275320648196363
+spkts,Mínimo,0.0,0.0
+spkts,Máximo,124.0,1.2895174708818635
+spkts,Q1,0.0,0.0
+spkts,Q2,0.0,0.0
+spkts,Q3,2.0,16.666666666666664
+spkts,IQR,2.0,20.0
+spkts,Assimetria,12.271336602233248,30.512276436563802
+spkts,Curtose,1258.5374201664486,64.0688047499213
+spkts,Quantidade de valores únicos,5601.0,
+spkts,KS - Estatística,0.09420965113692759,
+spkts,KS - Valor-p,0.0,
+spkts,Wasserstein,5.74881813468574,
+spkts,Wasserstein normalizada,0.0419966327450583,
+stcpb,Média,5737177.467135191,0.5919190064242128
+stcpb,Mediana,0.0,
+stcpb,Desvio padrão,18747353.435646772,1.3832987512096764
+stcpb,Variância,5.116669902010214e+16,2.785732656770326
+stcpb,Mínimo,0.0,
+stcpb,Máximo,32613.0,0.0007593320602273245
+stcpb,Q1,0.0,
+stcpb,Q2,0.0,
+stcpb,Q3,83477760.34701777,4.35539625106471
+stcpb,IQR,83477760.34701777,4.35539625106471
+stcpb,Assimetria,0.0076668906312076235,0.7091608725649596
+stcpb,Curtose,0.04674941788190906,14.746977386905652
+stcpb,Quantidade de valores únicos,32421.0,
+stcpb,KS - Estatística,0.00897342190360495,
+stcpb,KS - Valor-p,6.989864944846612e-05,
+stcpb,Wasserstein,21352589.61508979,
+stcpb,Wasserstein normalizada,0.01575529615475423,
+sttl,Média,40.033213809172025,22.29678829460701
+sttl,Mediana,0.0,0.0
+sttl,Desvio padrão,25.735416235945365,25.000401662761522
+sttl,Variância,4636.096414932939,43.75060249252896
+sttl,Mínimo,0.0,
+sttl,Máximo,0.0,0.0
+sttl,Q1,192.0,309.6774193548387
+sttl,Q2,0.0,0.0
+sttl,Q3,0.0,0.0
+sttl,IQR,192.0,100.0
+sttl,Assimetria,1.161625060514139,171.30353014475634
+sttl,Curtose,2.9756952581186553,198.1891987606
+sttl,Quantidade de valores únicos,991.0,
+sttl,KS - Estatística,0.18468531016704595,
+sttl,KS - Valor-p,0.0,
+sttl,Wasserstein,40.033213809172004,
+sttl,Wasserstein normalizada,0.3888984797854567,
+swin,Média,3.0781901404294985,2.647738352369602
+swin,Mediana,0.0,
+swin,Desvio padrão,0.37218145860606455,0.2930539033673824
+swin,Variância,94.39633379164661,0.5852490008319668
+swin,Mínimo,0.0,
+swin,Máximo,0.0,0.0
+swin,Q1,0.0,
+swin,Q2,0.0,
+swin,Q3,0.0,0.0
+swin,IQR,0.0,0.0
+swin,Assimetria,0.049036230960197214,27.696603731889912
+swin,Curtose,0.020570862219084107,1.0449255926780583
+swin,Quantidade de valores únicos,134.0,
+swin,KS - Estatística,0.012743107772854034,
+swin,KS - Valor-p,2.0654247475768442e-09,
+swin,Wasserstein,3.0781901404295042,
+swin,Wasserstein normalizada,0.02423752218443152,
+synack,Média,0.005885831913499926,28.00050322460988
+synack,Mediana,0.0,
+synack,Desvio padrão,0.0016620179658842146,3.829553586538106
+synack,Variância,0.00014150013609297318,7.512452366354541
+synack,Mínimo,0.0,
+synack,Máximo,0.39452299999999996,18.783661024437805
+synack,Q1,0.0,
+synack,Q2,0.0,
+synack,Q3,0.032879500000000006,141.30780471033182
+synack,IQR,0.032879500000000006,141.30780471033182
+synack,Assimetria,2.9103208754149996,50.29687527416349
+synack,Curtose,72.45133319372046,61.42004478872566
+synack,Quantidade de valores únicos,7503.0,
+synack,KS - Estatística,0.10387604137081452,
+synack,KS - Valor-p,0.0,
+synack,Wasserstein,0.006793266793822777,
+synack,Wasserstein normalizada,0.1565276654560941,
+tcprtt,Média,0.013066940594144844,31.565979458649508
+tcprtt,Mediana,0.0,
+tcprtt,Desvio padrão,0.00019910534218241238,0.2509078469531305
+tcprtt,Variância,3.155995649093118e-05,0.5011861464296429
+tcprtt,Mínimo,0.0,
+tcprtt,Máximo,0.0,0.0
+tcprtt,Q1,0.0,
+tcprtt,Q2,0.0,
+tcprtt,Q3,0.04863200000000001,74.26887188650144
+tcprtt,IQR,0.04863200000000001,74.26887188650144
+tcprtt,Assimetria,2.0263964766797034,50.178713069718704
+tcprtt,Curtose,32.386807494828176,63.152631458095186
+tcprtt,Quantidade de valores únicos,8410.0,
+tcprtt,KS - Estatística,0.10309789461677521,
+tcprtt,KS - Valor-p,0.0,
+tcprtt,Wasserstein,0.014278798748013246,
+tcprtt,Wasserstein normalizada,0.17993804745122138,
+trans_depth,Média,0.06824192697123543,64.3900754294968
+trans_depth,Mediana,0.0,
+trans_depth,Desvio padrão,0.3822744755594064,49.20442377176383
+trans_depth,Variância,0.4478525520208163,74.19809435641447
+trans_depth,Mínimo,0.0,
+trans_depth,Máximo,133.0,77.32558139534885
+trans_depth,Q1,0.0,
+trans_depth,Q2,0.0,
+trans_depth,Q3,0.0,
+trans_depth,IQR,0.0,
+trans_depth,Assimetria,156.29065466477363,93.39939689774336
+trans_depth,Curtose,33470.037148058684,97.2744111161085
+trans_depth,Quantidade de valores únicos,2239.0,
+trans_depth,KS - Estatística,0.08333539947872992,
+trans_depth,KS - Valor-p,0.0,
+trans_depth,Wasserstein,0.07541684156622733,
+trans_depth,Wasserstein normalizada,0.09707271788215294,

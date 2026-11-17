@@ -1,0 +1,45 @@
+﻿Variável,Tipo,Motivo da inclusão
+ackdat,Numérica,Analisar o tempo entre ACK e recebimento de dados.
+attack_cat,Categórica,Identificar a categoria de ataque ou tráfego normal.
+ct_dst_ltm,Numérica,Avaliar conexões recentes para o mesmo destino.
+ct_dst_sport_ltm,Numérica,Identificar padrões de portas de origem por destino.
+ct_dst_src_ltm,Numérica,Avaliar a frequência de comunicação entre origem e destino.
+ct_flw_http_mthd,Numérica,Avaliar a quantidade de métodos HTTP.
+ct_ftp_cmd,Numérica,Avaliar a quantidade de comandos FTP.
+ct_src_dport_ltm,Numérica,Identificar padrões de portas de destino por origem.
+ct_src_ltm,Numérica,Analisar conexões recentes da mesma origem.
+ct_srv_dst,Numérica,Avaliar conexões recentes ao mesmo serviço e destino.
+ct_srv_src,Numérica,Avaliar conexões recentes ao mesmo serviço e origem.
+ct_state_ttl,Numérica,Analisar a relação entre estado da conexão e TTL.
+dbytes,Numérica,Analisar o volume de bytes enviados pelo destino.
+dinpkt,Numérica,Avaliar o intervalo entre pacotes do destino.
+djit,Numérica,Analisar a variação temporal dos pacotes do destino.
+dload,Numérica,Avaliar a carga de transmissão do destino.
+dloss,Numérica,Identificar perdas de pacotes no destino.
+dmean,Numérica,Avaliar o tamanho médio dos pacotes do destino.
+dpkts,Numérica,Avaliar a quantidade de pacotes enviados pelo destino.
+dtcpb,Numérica,Analisar o número de sequência TCP do destino.
+dttl,Numérica,Analisar o TTL dos pacotes enviados pelo destino.
+dur,Numérica,Avaliar a duração das conexões de rede.
+dwin,Numérica,Avaliar o tamanho da janela TCP do destino.
+is_ftp_login,Numérica,Identificar a ocorrência de autenticação FTP.
+is_sm_ips_ports,Numérica,Identificar conexões com IPs e portas iguais.
+proto,Categórica,Identificar os protocolos utilizados nas conexões.
+rate,Numérica,Avaliar a taxa de transmissão de dados.
+response_body_len,Numérica,Analisar o tamanho do corpo das respostas.
+sbytes,Numérica,Analisar o volume de bytes enviados pela origem.
+service,Categórica,Avaliar os serviços de rede associados ao tráfego.
+sinpkt,Numérica,Avaliar o intervalo entre pacotes da origem.
+sjit,Numérica,Analisar a variação temporal dos pacotes da origem.
+sload,Numérica,Avaliar a carga de transmissão da origem.
+sloss,Numérica,Identificar perdas de pacotes na origem.
+smean,Numérica,Avaliar o tamanho médio dos pacotes da origem.
+spkts,Numérica,Avaliar a quantidade de pacotes enviados pela origem.
+state,Categórica,Analisar os estados das conexões de rede.
+stcpb,Numérica,Analisar o número de sequência TCP da origem.
+sttl,Numérica,Analisar o TTL dos pacotes enviados pela origem.
+swin,Numérica,Avaliar o tamanho da janela TCP da origem.
+synack,Numérica,Analisar o tempo entre SYN e SYN-ACK.
+tcprtt,Numérica,Avaliar o tempo de ida e volta da conexão TCP.
+trans_depth,Numérica,Avaliar a profundidade de transação HTTP.
+id,Ignorada,Coluna utilizada apenas para identificar e numerar registros.
